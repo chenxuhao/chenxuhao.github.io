@@ -10,24 +10,27 @@
 			<!--link rel="stylesheet" type="text/css" href="/css/main.css"-->
 		</head>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li class="active"><a href="index.html">Home</a></li>
-	        		<li class="active"><a href="pubs.html">Publications</a></li>
-		        	<li class="active"><a href="talks.html">About</a></li>
-	        		<li class="active"><a href="cv.html">CV</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
+			<div class="navbar navbar-inverse" role="navigation">
+				<div class="container">
+	    				<ul class="nav navbar-nav">
+	        			<li class="active"><a href="index.html">Home</a></li>
+	        			<li class="active"><a href="pubs.html">Publications</a></li>
+		        		<li class="active"><a href="talks.html">About</a></li>
+	        			<li class="active"><a href="cv.html">CV</a></li>
+	    				</ul>
+				</div>
+			</div>
+			<div id="layout-content">
 			
 			{{ content }}
 			
-			</div><!-- /.container -->
 			<footer>
-	    		<ul>
+	    			<ul>
 	        		<li><a href="mailto:cxh.nudt@gmail.com">email</a></li>
 	        		<li><a href="https://github.com/chenxuhao">github.com/chenxuhao</a></li>
 				</ul>
 			</footer>
+			
+			</div>
 		</body>
 	</html>
