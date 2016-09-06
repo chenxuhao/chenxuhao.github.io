@@ -1,0 +1,10 @@
+@inproceedings{Li:COLOR,
+	author = {Li, Pingfan and Chen, Xuhao and Quan, Zhe and Fang, Jianbin and Su, Huayou and Tang, Tao and Yang, Canqun},
+	title = {High Performance Parallel Graph Coloring on GPGPUs},
+	booktitle = {Proceedings of the 30th IEEE International Parallel \& Distributed Processing Symposium Workshop},
+	series = {IPDPSW '16},
+	year = {2016},
+	location = {Chicago, IL, USA},
+	pages = {1--10},
+	numpages = {10},
+} 
