@@ -1,0 +1,10 @@
+@inproceedings{Li:SCC,
+	author = {Li, Pingfan and Chen, Xuhao and Shen, Jie and Fang, Jianbin and Tang, Tao and Yang, Canqun},
+	title = {High Performance Detection of Strongly Connected Components in Sparse Graphs on GPUs},
+	booktitle = {In the Proceedings of the International Workshop on Programming Models and Applications for Multicores and Manycores, in conjunction with the 22nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming (PPoPP)},
+	series = {PMAM '17},
+	year = {2017},
+	location = {Austin, TX, USA},
+	pages = {1--10},
+	numpages = {10},
+} 
