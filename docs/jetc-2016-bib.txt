@@ -1,5 +1,5 @@
 @article{Zhang:2016:JETC,
-	author = {Zhang, Hang and Chen, Xuhao and Xiao, Nong and Wang, Lei and Liu, Fang and Chen, Wei and Chen Zhiguang},
+	author = {Zhang, Hang and Chen, Xuhao and Xiao, Nong and Wang, Lei and Liu, Fang and Chen, Wei and Chen, Zhiguang},
 	title = {Shielding STT-RAM Based Register files on GPUs Against Read Disturbance},
 	journal = {ACM Journal on Emerging Technologies in Computing Systems},
 	volume = {10},
