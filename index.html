@@ -1,34 +1,591 @@
----
-layout: default
-title: Xuhao Chen's Homepage
----
-<h2>Welcome to Xuhao Chen's Homepage</h2>
-<table class="imgtable"><tr><td>
-<img src="cxh-new.jpg" alt="Xuhao Chen" width="180px" height="240px" />&nbsp;</td>
-<td align="left"><h4>&nbsp;&nbsp;&nbsp;Xuhao Chen</i></h4>
-<h4>&nbsp;&nbsp;&nbsp;Postdoctoral Research Associate</h4>
-<h4>&nbsp;&nbsp;&nbsp;<a href="https://www.csail.mit.edu/">Computer Science & Artificial Intelligence Laboratory (CSAIL)</a> </h4>
-<h4>&nbsp;&nbsp;&nbsp;<a href="https://www.mit.edu/">Massachusetts Institute of Technology</a></h4>
-<h4>&nbsp;&nbsp;&nbsp;Room 32-G885, CSAIL, MIT</h4>
-<h4>&nbsp;&nbsp;&nbsp;32 Vassar St, Cambridge, MA, 02139</h4>
-<h4>&nbsp;&nbsp;&nbsp;<img src="email_icon.jpg"/ ALIGN=TOP> <i><b>cxh@mit.edu</b></i></h4>
-<h4>&nbsp;&nbsp;&nbsp;<a href="https://scholar.google.com/citations?user=GcdGTBAAAAAJ&hl=en">Google Scholar Profile</a> <br /></h4>
-</td></tr></table>
-<h2>About</h2>
-<p>I am a Postdoctoral Research Associate at 
-  <a href="https://www.csail.mit.edu/">Computer Science & Artificial Intelligence Lab</a> of
-  <a href="https://www.mit.edu/">Massachusetts Institute of Technology</a>, 
-  working with Prof. <a href="http://csg.csail.mit.edu/Users/arvind/">Arvind</a>.
-  I work on parallel computing and computer architecture, with an emphasis on massively parallel accelerators.
-  My recent work focuses on efficient processing of pattern mining and machine learning on graphs.
-  I received my Ph.D. degree in Computer Science from 
-  <a href="http://www.nudt.edu.cn/index_eng.htm">National University of Defense Technology (NUDT)</a> in Dec. 2014.
-  Before joining MIT, I was a research fellow working with Prof. <a href="http://www.cs.utexas.edu/~pingali/">Keshav Pingali</a> in the
-  <a href="https://iss.oden.utexas.edu/">Intelligent Software Systems group</a> at
-  <a href="https://www.utexas.edu/">University of Texas at Austin</a> from Jan. 2019 to Aug. 2020. 
-  Before that, I spent two years (from Oct. 2012 to Oct. 2014) as a visiting Ph.D. student
-  working with Prof. <a href="http://impact.crhc.illinois.edu/People/Hwu/hwu.aspx">Wen-Mei Hwu</a> in the 
-  <a href="http://impact.crhc.illinois.edu/">IMPACT Research group</a> at 
-  <a href="http://www.illinois.edu/">University of Illinois Urbana-Champaign</a>.
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>[Xuhao Chen @ MIT]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/menucollapse.js"></script>
+    <script type="text/javascript" src="js/arrow78.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!--script type="text/javascript" src="js/include.js"></script-->
+  </head>
+
+  <body id="page-top" class="index">
+    <!--div w3-include-html="navigation.html"></div>
+    <section>
+      <gcse:searchresults-only></gcse:searchresults-only>
+    </section>
+    <div w3-include-html="home.html"></div> 
+    <div w3-include-html="intro.html"></div> 
+    <div w3-include-html="pubs.html"></div> 
+    <div w3-include-html="research.html"></div> 
+    <div w3-include-html="teach.html"></div> 
+    <div w3-include-html="awards.html"></div> 
+    <div w3-include-html="service.html"></div> 
+    <div w3-include-html="grants.html"></div> 
+    <div w3-include-html="contact.html"></div> 
+    <script>includeHTML();</script-->
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="glyphicon glyphicon-search"></span>
+      </button>
+      <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <span><a href="#"><img border="0" width="170" src="images/mit_logo.png"/></a></span>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="page-scroll">
+          <a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Home</a>
+        </li>
+        <li class="page-scroll">
+          <a onclick="javascript:reset_menus();$('#tab-pub-content').show();" href="#publications">Publications</a>
+        </li>
+		<li class="page-scroll">
+		  <a onclick="javascript:reset_menus();$('#tab-research-content').show();" href="#research">Research</a>
+		</li>
+        <li class="page-scroll">
+          <a onclick="javascript:reset_menus();$('#tab-teach-content').show();" href="#teach">Teaching</a>
+		</li>
+        <li class="page-scroll">
+          <a onclick="javascript:reset_menus();$('#tab-awards-content').show();" href="#awards">Awards</a>
+        </li>
+        <li class="page-scroll">
+          <a onclick="javascript:reset_menus();$('#tab-service-content').show();" href="#service">Service</a>
+        </li>
+        <li class="page-scroll">
+          <a onclick="javascript:reset_menus();$('#tab-grants-content').show();" href="#grants">Grants</a>
+        </li>
+        <li class="page-scroll">
+          <a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+    <!-- search box submenu -->
+    <div class="collapse" id="bs-example-navbar-collapse-2">
+        <gcse:search></gcse:search>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+ 
+    <section>
+      <gcse:searchresults-only></gcse:searchresults-only>
+    </section>
+
+<!-- Home Section -->
+<section id="home" style="margin-top:40px">
+<div class="container">
+<div align="left" class="col-md-3">
+    <!-- <a target="_blank" href="http://www.cs.ucy.ac.cy/~dzeina/zeinalipour.jpg"> </a> -->
+  <img id="mobile-img" src="images/portrait.jpg"border="0" height="200" alt="">
+</div>
+<div align="left" class="col-md-4">
+  <h3>Xuhao Chen
+  <h4>Postdoctoral Research Associate<br>
+  <a href="https://www.csail.mit.edu/">Computer Science & Artificial Intelligence Laboratory (CSAIL)</a><br>
+  <a href="https://www.mit.edu/">Massachusetts Institute of Technology</a><br>
+  32-G885, Stata Center<br>
+  32 Vassar Street, Cambridge, MA 02139<br>
+  <img src="email_icon.jpg"/ ALIGN=TOP> cxh@mit.edu
+  </h4>
+</div>
+<b class="expandshow" style="display:none;" id="tab-1">
+  <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+</b>
+<b class="collapseshow" style="display:none;" id="tab-1">
+  <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+</b>
+</div>
+</section>
+
+<!-- Introduction Section -->
+<section id="intro">
+<div class="container lead">
+<div style="text-align: left; margin-top:10px" class="col-md-12">
+<!--<h2>Welcome!</h2>-->
+<i class="noshow" style="display:none;" id="tab-1">
+<button class="btn btn-default btn-lg btn-block" 
+        style="display: block; width: 100%;" 
+        onclick="javascript:$('#tab-intro-content').toggle();">
+    Introduction <span class="glyphicon glyphicon-chevron-right"></span>
+</button>
+</i>
+<div class="allshow" style="display:none;" id="tab-intro-content">
+<hr class="star-primary">
+  <p class="lead">
+      I am a Postdoctoral Research Associate in the <a href="http://csg.csail.mit.edu/">Computation Structures Group (CSG)</a> 
+      at <a href="http://www.csail.mit.edu/">MIT CSAIL</a>,
+      working with <a href="http://csg.csail.mit.edu/Users/arvind">Prof. Arvind</a>.
+      I work on parallel computing and computer architecture, with an emphasis on massively parallel accelerators.
+      My recent work focuses on domain-specific acceleration for pattern mining and machine learning on graphs.
+      I received my Ph.D. degree in Computer Science from 
+      <a href="http://www.nudt.edu.cn/index_eng.htm">National University of Defense Technology (NUDT)</a> in Dec. 2014.
+      Before joining MIT, I was a research fellow working with Prof. <a href="http://www.cs.utexas.edu/~pingali/">Keshav Pingali</a> in the
+      <a href="https://iss.oden.utexas.edu/">Intelligent Software Systems group</a> at
+      <a href="https://www.utexas.edu/">University of Texas at Austin</a> from Jan. 2019 to Aug. 2020. 
+      Before that, I spent two years (from Oct. 2012 to Oct. 2014) as a visiting Ph.D. student
+      working with Prof. <a href="http://impact.crhc.illinois.edu/People/Hwu/hwu.aspx">Wen-Mei Hwu</a> in the 
+      <a href="http://impact.crhc.illinois.edu/">IMPACT Research group</a> at 
+      <a href="http://www.illinois.edu/">University of Illinois Urbana-Champaign</a>.
+  </p>
+  <!-- <a href="bio.html" class="btn-sm btn-primary">Short Biography &raquo;</a> -->
+  <!-- <a href="cv.html" class="btn-sm btn-primary">CV (html)&raquo;</a> -->
+  <a href="https://scholar.google.com/citations?user=GcdGTBAAAAAJ&hl=en" class="btn-sm btn-primary">Google Scholar&raquo;</a>
+  <a href="CV_Xuhao_Chen.pdf" class="btn-sm btn-primary">CV (PDF)&raquo;</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="publications">
+<div class="container lead">
+<div style="text-align: left; margin-top:10px" class="col-md-12">
+<i class="noshow" style="display:none;" id="tab-2">
+<button class="btn btn-default btn-lg btn-block" 
+        style="display: block; width: 100%;" 
+        onclick="javascript:$('#tab-pub-content').toggle();">
+    Publications<span class="glyphicon glyphicon-chevron-right"></span>
+</button>
+</i>
+<div class="allshow" style="display:none;" id="tab-pub-content">
+<hr class="star-primary">
+
+<h2>Publications </h2>
+<h3><a href="https://scholar.google.com/citations?user=GcdGTBAAAAAJ&hl=en">(Google Scholar)</a>
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Xuhao">(DBLP)</a></h3>
+
+<h3>2020 </h3>
+<p><b><span style="color: forestgreen">(VLDB 2020)</span></b>
+[<a href="http://www.vldb.org/pvldb/vol13/p1190-chen.pdf">PDF</a>]
+[<a href="https://github.com/IntelligentSoftwareSystems/Galois/tree/master/lonestar/mining">Code</a>]
+[<a href="docs/vldb-2020-bib.txt">BibTeX</a>] <br />
+<b>Xuhao Chen</b>, Roshan Dathathri, Gurbinder Gill, Keshav Pingali,<br />
+<a href="http://www.vldb.org/pvldb/vol13/p1190-chen.pdf">
+<i>Pangolin: An Efficient and Flexible Graph Mining System on CPU and GPU</i></a>, <br />
+PVLDB 13(8): 1190-1205, 2020<br /></p>
+<h3></h3>
+
+<h3>2019 </h3>
+<p><b><span style="color: forestgreen">(HPEC 2019)</span></b>
+[<a href="https://www.cs.utexas.edu/~roshan/DistTC.pdf">PDF</a>]
+[<a href="https://www.cs.utexas.edu/~roshan/DistTC.pptx">Talk (PPTX)</a>]
+[<a href="https://github.com/IntelligentSoftwareSystems/Galois">Code</a>] <br />
+Loc Hoang, Vishwesh Jatala, <b>Xuhao Chen</b>, Udit Agarwal, Roshan Dathathri, Grubinder Gill, Keshav Pingali,<br />
+<a href="https://www.cs.utexas.edu/~roshan/DistTC.pdf">
+<i>DistTC: High Performance Distributed Triangle Counting</i></a>, <br />
+IEEE High Performance Extreme Computing Conference (HPEC), 2019<br /></p>
+<h3></h3>
+
+<p><b><span style="color: forestgreen">(arXiv)</span></b>
+[<a href="https://arxiv.org/pdf/1904.02241.pdf">PDF</a>]
+[<a href="https://github.com/chenxuhao/gardenia">Code</a>] <br />
+<b>Xuhao Chen</b>,<br />
+<a href="https://arxiv.org/pdf/1904.02241.pdf">
+<i>GraphCage: Cache Aware Graph Processing on GPUs</i></a>, <br />
+CoRR, https://arxiv.org/abs/1904.02241<br /></p>
+<h3></h3>
+
+<p><b><span style="color: forestgreen">(JETC)</span></b>
+[<a href="docs/jetc-2018.pdf">PDF</a>]
+[<a href="https://github.com/chenxuhao/gardenia">Code</a>] <br />
+Zhen Xu, <b>Xuhao Chen</b>, Jie Shen, Yang Zhang, Cheng Chen, Canqun Yang,<br />
+<a href="https://arxiv.org/abs/1708.04567">
+<i>GARDENIA: A Graph Processing Benchmark Suite for Next-generation Accelerators</i></a>, <br />
+ACM Journal on Emerging Technologies in Computing Systems, 15(1): 1-13, 2019<br /></p>
+<h3></h3>
+
+<h3>2018 </h3>
+<p><b><span style="color: forestgreen">(arXiv)</span></b>
+[<a href="https://arxiv.org/pdf/1802.10280.pdf">PDF</a>]
+[<a href="https://github.com/chenxuhao/caffe-escoin">Code</a>] <br />
+<b>Xuhao Chen</b>,<br />
+<a href="https://arxiv.org/pdf/1802.10280.pdf">
+<i>Escort: Efficient Sparse Convolutional Neural Networks on GPUs</i></a>, <br />
+CoRR, https://arxiv.org/abs/1802.10280<br /></p>
+<h3></h3>
+
+<p><b><span style="color: forestgreen">(Parco)</span></b>
+[<a href="docs/parco-scc.pdf">PDF</a>]
+[<a href="https://github.com/chenxuhao/gardenia/tree/master/src/scc">Code</a>]
+[<a href="docs/parco-scc-bib.txt">BibTeX</a>] <br />
+<b>Xuhao Chen</b>, Cheng Chen, Jie Shen, Jianbin Fang, Tao Tang, Canqun Yang, Zhiying Wang,<br />
+<a href="https://www.sciencedirect.com/science/article/pii/S0167819117301837">
+<i>Orchestrating Parallel Detection of Strongly Connected Components on GPUs</i></a>, <br />
+Parallel Computing, Vol 78, Pages 101–114, 2018<br /></p>
+<h3></h3>
+
+<h3>2017 </h3>
+<p><b><span style="color: forestgreen">(PMAM 2017)</span></b>
+[<a href="docs/pmam-2017.pdf">PDF</a>]
+[<a href="docs/pmam-2017.pptx">Talk (PPTX)</a>]
+[<a href="https://github.com/chenxuhao/gardenia/tree/master/src/scc">Code</a>]
+[<a href="docs/pmam-2017-bib.txt">BibTeX</a>] <br />
+Pingfan Li, <b>Xuhao Chen</b>, Jie Shen, Jianbin Fang, Tao Tang, Canqun Yang, <br />
+<a href="docs/pmam-2017.pdf">
+<i>High Performance Detection of Strongly Connected Components in Sparse Graphs on GPUs</i></a>, <br />
+In the Proceedings of the International Workshop on Programming Models and Applications for Multicores and Manycores, in conjunction with the 22nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming (PPoPP), Austin, TX, Feb 2017 <br /> </p>
+<h3></h3>
+
+<p><b><span style="color: forestgreen">(CPE)</span></b>
+[<a href="docs/cpe-2017.pdf">PDF</a>]
+[<a href="https://github.com/chenxuhao/gardenia/tree/master/src/vc">Code</a>]
+[<a href="docs/cpe-2017-bib.txt">BibTeX</a>] <br />
+<b>Xuhao Chen</b>, Pingfan Li, Jianbin Fang, Tao Tang, Zhiying Wang, Canqun Yang,<br />
+<a href="https://onlinelibrary.wiley.com/doi/full/10.1002/cpe.4064">
+<i>Efficient and High-quality Sparse Graph Coloring on the GPU</i></a>, <br />
+Concurrency and Computation: Practice and Experience, Volume 29, Issue 10, 17 April 2017 <br /></p>
+<h3></h3>
+
+<h3>2016 </h3>
+<p><b><span style="color: forestgreen">(PPL)</span></b>
+[<a href="docs/ppl-2016.pdf">PDF</a>]
+[<a href="docs/ppl-2016-bib.txt">BibTeX</a>] <br />
+Jianbin Fang, Peng Zhang, Zhaokui Li, Tao Tang, <b>Xuhao Chen</b>, Cheng Chen, Canqun Yang,<br />
+<a href="docs/ppl-2016.pdf"><i>Evaluating Multiple Streams on Heterogeneous Platforms</i></a>, <br />
+Parallel Processing Letters, Vol. 26, No. 4, 2016 <br /> </p>
+<h3></h3>
+
+<p><b><span style="color: forestgreen">(JETC)</span></b>
+[<a href="docs/jetc-2016.pdf">PDF</a>]
+[<a href="docs/jetc-2016-bib.txt">BibTeX</a>] <br />
+Hang Zhang, <b>Xuhao Chen</b>, Nong Xiao, Lei Wang, Fang Liu, Wei Chen, Zhiguang Chen, <br />
+<a href="docs/jetc-2016.pdf"><i>Shielding STT-RAM Based Register files on GPUs Against Read Disturbance</i></a>, <br />
+ACM Journal on Emerging Technologies in Computing Systems, Vol. 10, No. 5, Article 39, March 2016 <br /> </p>
+<h3></h3>
+
+<p><b><span style="color: forestgreen">(DAC 2016)</span></b>
+[<a href="docs/dac-2016.pdf">PDF</a>]
+[<a href="docs/dac-2016.pptx">Talk (PPTX)</a>]
+[<a href="docs/dac-2016-bib.txt">BibTeX</a>] <br />
+Hang Zhang, <b>Xuhao Chen</b>, Nong Xiao, Fang Liu, <br />
+<a href="docs/dac-2016.pdf"><i>Optimizing STT-RAM Based Register File Energy Consumption on GPGPU with Delta Compression</i></a>, <br />
+In the Proceedings of the 53rd Design Automation Conference (DAC-53), Austin, TX, June 2016 <br />
+(Acceptance rate: 152/876 ≈ 17.4%) <br /> </p>
+<h3></h3>
+
+<p><b><span style="color: forestgreen">(GLSVLSI 2016)</span></b>
+[<a href="docs/glsvlsi-2016.pdf">PDF</a>]
+[<a href="docs/glsvlsi-2016-poster.pptx">Poster (PPTX)</a>]
+[<a href="docs/glsvlsi-2016-bib.txt">BibTeX</a>] <br />
+Hang Zhang, <b>Xuhao Chen</b>, Nong Xiao, Fang Liu, Zhiguang Chen, <br />
+<a href="docs/glsvlsi-2016.pdf"><i>Red-Shield: Shielding Read Disturbance for STT-RAM Based Register Files on GPUs</i></a>, <br />
+In the Proceedings of the 26th Great Lakes Symposium on VLSI (GLSVLSI), Boston, MA, May 2016 <br /> </p>
+<h3></h3>
+
+<p><b><span style="color: forestgreen">(IPDPSW 2016)</span></b>
+[<a href="docs/ipdpsw-2016.pdf">PDF</a>]
+[<a href="https://github.com/chenxuhao/gardenia/tree/master/src/vc">Code</a>]
+[<a href="docs/ipdpsw-2016-bib.txt">BibTeX</a>] <br />
+Pingfan Li, <b>Xuhao Chen</b>, Zhe Quan, Jianbin Fang, Huayou Su, Tao Tang, Canqun Yang, <br />
+<a href="docs/ipdpsw-2016.pdf"><i>High Performance Parallel Graph Coloring on GPGPUs</i></a>, <br />
+In the Proceedings of the 30th IEEE International Parallel & Distributed Processing Symposium Workshop (IPDPSW), Chicago, IL, May 2016 <br /> </p>
+<h3></h3>
+
+<h3>2014 </h3>
+<p><b><span style="color: forestgreen">(MICRO 2014)</span></b>
+[<a href="docs/micro-2014.pdf">PDF</a>]
+[<a href="docs/micro-2014.pptx">Talk (PPTX)</a>]
+[<a href="docs/micro-2014-poster.pptx">Poster</a>]
+[<a href="docs/micro-2014-lighting.pdf">Lightning</a>]
+[<a href="docs/micro-2014-bib.txt">BibTeX</a>] <br />
+<b>Xuhao Chen</b>, Li-Wen Chang, Christopher I. Rodrigues, Jie Lv, Zhiying Wang, Wen-Mei W. Hwu, <br />
+<a href="docs/micro-2014.pdf"><i>Adaptive Cache Management for Energy-efficient GPU Computing</i></a>, <br />
+In the Proceedings of 47th International Symposium on Micro Architecture (MICRO), Cambridge, UK, December 2014 <br />
+(Acceptance rate: 53/273 ≈ 19.4%) <br /></p>
+<h3></h3>
+
+<p><b><span style="color: forestgreen">(MES 2014)</span></b>
+[<a href="docs/mes-2014.pdf">PDF</a>]
+[<a href="docs/mes-2014.pptx">Talk (PPTX)</a>]
+[<a href="docs/mes-2014-bib.txt">BibTeX</a>] <br />
+<b>Xuhao Chen</b>, Shengzhao Wu, Li-Wen Chang, Wei-Sheng Huang, Carl Pearson, Zhiying Wang, Wen-Mei W. Hwu, <br />
+<a href="docs/mes-2014.pdf"><i>Adaptive Cache Bypass and Insertion for Many-core Accelerators</i></a>, <br />
+In the Proceedings of the 2nd ACM International Workshop on Many-core embedded systems (MES '14), in conjunction with ISCA-41, Minneapolis, MN, June 2014 <br />
 </p>
+<h3></h3>
+
+<p><b><span style="color: forestgreen">(Science China)</span></b> <br />
+<b>Xuhao Chen</b>, Li Shen, Zhiying Wang, Zhong Zheng, Wei Chen, <br />
+<a href="https://link.springer.com/article/10.1007/s11432-014-5089-5">
+<i>Binary Compatibility for Embedded Systems using Greedy Subgraph Mapping</i></a>, <br />
+SCIENCE CHINA Information Sciences, Volume 57, Issue 7, pp 1-16, July 2014 <br /></p>
+<h3></h3>
+
+</div>
+</div>
+</div>
+</section>
+
+<section id="research">
+<div class="container lead">
+<div style="text-align: left; margin-top:10px" class="col-md-12">
+<i class="noshow" style="display:none;" id="tab-4">
+<button class="btn btn-default btn-lg btn-block"  
+        style="display: block; width: 100%;" 
+        onclick="javascript:$('#tab-research-content').toggle();">
+    Experiences  <span class="glyphicon glyphicon-chevron-right"></span>
+</button>
+</i>
+<div class="allshow" style="display:none;" id="tab-research-content">
+<hr class="star-primary">
+
+<h2>Research Experience</h2>
+
+<h3>2019 - 2020 </h3>
+<p>
+<b>Programming Framework for Graph Pattern Mining</b> <br />
+<i>With</i> Prof. <a href="http://www.cs.utexas.edu/~pingali/">Keshav Pingali</a> <br />
+Design and implemented Pangolin, an efficient and flexible graph pattern mining (GPM)
+framework targeting shared-memory CPUs and GPUs. It is the first GPM system that supports
+GPU mining. Pangolin provides a novel programming interface which allows users
+to express application-specific optimizations. It also employs novel architecture oriented
+optimizations, particularly for the GPU architecture. These innovations makes Pangolin
+orders-of-magnitude faster than previous GPM systems.
+<br /> </p>
+
+<h3>2015 - 2018 </h3>
+<p>
+<b>Parallel Graph Algorithms on GPU</b> <br />
+<i>With</i> Prof. <a href="https://dblp.org/pid/w/ZhiyingWang-3.html">Zhiying Wang</a> <br />
+Design and implemented various parallel graph algorithms, frameworks and benchmarks
+on the GPU, for diverse graph problems ranging from graph coloring and and
+strongly connected components to sparse neural networks. I proposed techniques to overcome
+the challenges of insufficient parallelism, indirect memory access pattern and load imbalance,
+which leads to substantial speedups over previous parallel CPU and GPU solutions.
+<br /> </p>
+
+<h3>2011 - 2014 </h3>
+<p>
+<b>Cache Architecture for Irregular Algorithms on GPU</b> <br />
+<i>With</i> Prof. <a href="http://impact.crhc.illinois.edu/People/Hwu/hwu.aspx">Wen-Mei Hwu</a> 
+and Prof. <a href="https://dblp.org/pid/w/ZhiyingWang-3.html">Zhiying Wang</a> <br />
+Designed and implemented efficient cache architectures [4,5,7,9] for irregular applications on
+GPU. Irregular algorithms, e.g., graph algorithms, have indirect memory accesses that cause
+memory divergence on GPU. The massive amount of diverged memory requests causes severe
+cache contention and resource congestion. I proposed an adaptive cache management scheme
+[4] specifically for the GPU architecture, which effectively combines the techniques of warp
+throttling and cache bypassing, and achieves significant performance improvement.
+<br /> </p>
+
+</div>
+</div>
+</div>
+</section>
+
+
+<section id="teach">
+<div class="container lead">
+<div style="text-align: left; margin-top:10px" class="col-md-12">
+<i class="noshow" style="display:none;" id="tab-3">
+<button class="btn btn-default btn-lg btn-block"  
+        style="display: block; width: 100%;" 
+        onclick="javascript:$('#tab-teach-content').toggle();">
+    Courses  <span class="glyphicon glyphicon-chevron-right"></span>
+</button>
+</i>
+<div class="allshow" style="display:none;" id="tab-teach-content">
+<hr class="star-primary">
+
+<h2>Teaching Experience</h2>
+<p>
+<b>Computer Architecture</b> (undergraduate course) <b>Fall 2008 NUDT</b> <br />
+<i>With Professor Zhiying Wang</i> <br />
+Teaching Assistant to mentor students on lab assignments and final projects
+<br /> </p>
+
+<p>
+<b>Design and Analysis of Algorithms</b> (undergraduate course) <b>Fall 2010 NUDT</b> <br />
+<i>With Professor Jianping Yin</i> <br />
+Teaching Assistant to mentor students on labs and final projects and help with scoring
+<br /> </p>
+
+<p>
+<b>CS 380C: Advanced Topics in Compilers</b> (graduate course) <b>Fall 2019, UT Austin</b> <br />
+<i>With Professor Keshav Pingali</i> <br />
+Teaching Assistant to setup course project and mentor students
+<br /> </p>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- Awards Section -->
+<section id="awards">
+<div class="container lead">
+<div style="text-align: left; margin-top:10px" class="col-md-12">
+<i class="noshow" style="display:none;" id="tab-1">
+<button class="btn btn-default btn-lg btn-block"  
+        style="display: block; width: 100%;" 
+        onclick="javascript:$('#tab-awards-content').toggle();">
+    Awards  <span class="glyphicon glyphicon-chevron-right"></span>
+</button>
+</i>
+<div class="allshow" style="display:none;" id="tab-awards-content">
+<hr class="star-primary">
+
+<h2>Selected Honors and Awards</h2>
+
+<p>
+<a href="https://graphchallenge.mit.edu/champions">Graph Challenge</a> 2019 Student Innovation Awards 2019
+<br /> </p>
+
+<p>
+China Computer Federation (CCF) Distinguished PhD Dissertation Award Nominee 2015
+<br /> </p>
+
+<p>
+Ci Yun-Gui Computer Technology Scholarship for Graduate, NUDT (top 1%) 2010
+<br /> </p>
+
+<p>
+<b>Meritorious Winner</b>, Mathematical Contest In Modeling (MCM), <a href="https://www.comap.com/undergraduate/contests/">COMAP</a> 2009
+<br /> </p>
+
+<p>
+Distinguished Graduate, NUDT (top 1%), 2009
+<br /> </p>
+
+<p>
+First rank, Scholarship of Excellent Achievements, NUDT (top 3%) 2009
+<br /> </p>
+
+<p>
+Ci Yun-Gui Computer Technology Scholarship for Undergraduate, NUDT (top 1%) 2008
+<br /> </p>
+
+<p>
+First-rank Prize, China Undergraduate Mathematical Contest in Modeling 2007
+<br /> </p>
+
+<p>
+First rank, Scholarship of Excellent Achievements, NUDT (top 3%) 2007
+<br /> </p>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- Service Section -->
+<section id="service">
+<div class="container lead">
+<div style="text-align: left; margin-top:10px" class="col-md-12">
+<i class="noshow" style="display:none;" id="tab-6">
+<button class="btn btn-default btn-lg btn-block"  
+        style="display: block; width: 100%;" 
+        onclick="javascript:$('#tab-6-content').toggle();">
+        Service  <span class="glyphicon glyphicon-chevron-right"></span>
+</button>
+</i>
+<div class="allshow" style="display:none;" id="tab-6-content">
+<hr class="star-primary">
+
+<h2>Academic Service </h2>
+
+<p>Invited reviewer for
+<i>ACM Transactions on Modeling and Performance Evaluation of Computing Systems</i> 
+<br /> </p>
+
+<p>Invited reviewer for 
+<i>Microprocessors and Microsystems: Embedded Hardware Design</i>
+<br /> </p>
+
+<p>Invited reviewer for 
+<i>Journal of Supercomputing</i>  
+<br /> </p>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- Grants Section -->
+<section id="grants">
+<div class="container lead">
+<div style="text-align: left; margin-top:10px" class="col-md-12">
+<i class="noshow" style="display:none;" id="tab-6">
+<button class="btn btn-default btn-lg btn-block"  
+        style="display: block; width: 100%;" 
+        onclick="javascript:$('#tab-grants-content').toggle();">
+    Projects  <span class="glyphicon glyphicon-chevron-right"></span>
+</button>
+</i>
+<div class="allshow" style="display:none;" id="tab-grants-content">
+<hr class="star-primary">
+
+<h2>Grant Writing Experience</h2>
+
+<p>
+1. NSF of China Grant No. 61502514 (2015), PI: Xuhao Chen <br />
+Project Title: Memory Hierarchy for Energy-efficient Heterogeneous Processors
+<br /> </p>
+
+<p>
+2. NSF of China Grant No. 61272144 (2012), PI: Zhiying Wang <br />
+Co-wrote successful grant proposal titled Energy-efficient Asynchronous Manycore Processor
+<br /> </p>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+<div class="container lead">
+<div style="text-align: left; margin-top:10px" class="col-md-12">
+<i class="noshow" style="display:none;" id="tab-9">
+<button class="btn btn-default btn-lg btn-block"  
+        style="display: block; width: 100%;" 
+        onclick="javascript:$('#tab-contact-content').toggle();">
+Contact<span class="glyphicon glyphicon-chevron-right"></span>
+</button>
+</i>
+<div class="allshow" style="display:none;" id="tab-contact-content">
+<hr class="star-primary">
+
+<h2>Links</h2>
+<p>
+  <a href="https://scholar.google.com/citations?user=GcdGTBAAAAAJ&hl=en">Google Scholar Profile</a> <br />
+  <a href="https://www.linkedin.com/in/xuhao-chen-b7296a43">LinkedIn Profile</a> <br />
+  <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Xuhao">DBLP Entry</a> <br />
+  <a href="http://chenxuhao.github.io/">Another Homepage</a> <br />
+  <a href="https://github.com/chenxuhao/">Github Entry</a> <br />
+</p>
+
+</div>
+</div>
+<hr class="star-primary">
+</div>
+</section>
+
 <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=EddFCv4Xn5aP9UiuidpnqAqupxu-kMHdK2QYTjUbLPA&cl=ffffff&w=a"></script>
+
+  <hr class="star-primary">
+  <footer>
+    <small>
+    <center> © 2020 | Xuhao Chen
+    </center>
+    </small>
+  </footer>
+  </body>
+</html>
+

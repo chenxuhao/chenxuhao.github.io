@@ -1,0 +1,16 @@
+@article{10.14778/3389133.3389137,
+author = {Chen, Xuhao and Dathathri, Roshan and Gill, Gurbinder and Pingali, Keshav},
+title = {Pangolin: An Efficient and Flexible Graph Mining System on CPU and GPU},
+year = {2020},
+issue_date = {June 2020},
+publisher = {VLDB Endowment},
+volume = {13},
+number = {10},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/3389133.3389137},
+doi = {10.14778/3389133.3389137},
+journal = {Proc. VLDB Endow.},
+month = apr,
+pages = {1190–1205},
+numpages = {16}
+} 
