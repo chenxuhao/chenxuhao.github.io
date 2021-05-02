@@ -134,7 +134,7 @@
       at <a href="http://www.csail.mit.edu/">MIT CSAIL</a>,
       working with <a href="http://csg.csail.mit.edu/Users/arvind">Prof. Arvind</a>.
       I work on domain-specific computer system and architecture,
-      mostly for data mining and machine learning on graphs.
+      mainly for data mining and machine learning on graphs.
       <!-- I received my Ph.D. degree in Computer Science from <a href="http://www.nudt.edu.cn/index_eng.htm">National University of Defense Technology (NUDT)</a> in Dec. 2014. -->
       Before joining MIT, I was a research fellow (from Jan. 2019 to Aug. 2020)
       <!--working with Prof. <a href="http://www.cs.utexas.edu/~pingali/">Keshav Pingali</a>-->
@@ -176,6 +176,7 @@
 [<a href="docs/gnnsys-2021.pdf">PDF</a>]
 [<a href="docs/gnnsys-2021-poster.pptx">Poster</a>]
 [<a href="docs/gnnsys-2021-bib.txt">BibTeX</a>]
+[<a href="https://www.dropbox.com/s/263c0otvtl3w9wc/MIT-CSAIL-FastCodeSeminar-XuhaoChen-4-28-2021.mp4?dl=0">Zoom Talk</a>]
 [<a href="https://github.com/IntelligentSoftwareSystems/Galois">Code</a>] <br />
 Loc Hoang, <b>Xuhao Chen</b>, Hochan Lee, Roshan Dathathri, Gurbinder Gill, Keshav Pingali,<br />
 <a href="docs/gnnsys-2021.pdf">
@@ -187,6 +188,7 @@ Workshop on Graph Neural Networks and Systems, 2021<br /></p>
 [<a href="docs/isca-2021.pdf">PDF</a>]
 [<a href="docs/isca-2021.pptx">Talk (PPTX)</a>]
 [<a href="docs/isca-2021-bib.txt">BibTeX</a>]
+[<a href="https://www.dropbox.com/s/263c0otvtl3w9wc/MIT-CSAIL-FastCodeSeminar-XuhaoChen-4-28-2021.mp4?dl=0">Zoom Talk</a>]
 [<a href="">Code</a>] <br />
 <b>Xuhao Chen*</b>, Tianhao Huang*, Shuotao Xu, Thomas Bourgeat, Chanwoo Chung, Arvind<br />
 <a href="docs/isca-2021.pdf">
@@ -385,27 +387,32 @@ SCIENCE CHINA Information Sciences, Volume 57, Issue 7, pp 1-16, July 2014 <br /
 
 <h2>Research Experience</h2>
 
+<h3>2020 - Present </h3>
+<p>
+<b>Hardware Accelerator for Graph Pattern Mining</b> <br />
+<i>With</i> Prof. <a href="http://csg.csail.mit.edu/Users/arvind/">Arvind</a> <br />
+Design and implemented FlexMiner, a pattern-aware accelerator for graph pattern mining (GPM).
+FlexMiner offers an order of magnitude speedup over state-of-the-art software GPM solutions.
+<br /> </p>
+
 <h3>2019 - 2020 </h3>
 <p>
 <b>Programming Framework for Graph Pattern Mining</b> <br />
 <i>With</i> Prof. <a href="http://www.cs.utexas.edu/~pingali/">Keshav Pingali</a> <br />
-Design and implemented Pangolin, an efficient and flexible graph pattern mining (GPM)
-framework targeting shared-memory CPUs and GPUs. It is the first GPM system that supports
-GPU mining. Pangolin provides a novel programming interface which allows users
-to express application-specific optimizations. It also employs novel architecture oriented
-optimizations, particularly for the GPU architecture. These innovations makes Pangolin
-orders-of-magnitude faster than previous GPM systems.
+Design and implemented two graph pattern mining (GPM) frameworks, Pangolin and Sandslash.
+Pangolin targets both CPU and GPU. It is the first GPM system that supports GPU mining,
+and it is orders-of-magnitude faster than previous GPM systems.
+Sandslash targets CPU only.
+It provides a novel two-level programming interface and supports adavanced GPM optimizations,
+which offers 8x speedup over Pangolin on CPU.
 <br /> </p>
 
 <h3>2015 - 2018 </h3>
 <p>
 <b>Parallel Graph Algorithms on GPU</b> <br />
 <i>With</i> Prof. <a href="https://dblp.org/pid/w/ZhiyingWang-3.html">Zhiying Wang</a> <br />
-Design and implemented various parallel graph algorithms, frameworks and benchmarks
-on the GPU, for diverse graph problems ranging from graph coloring and and
-strongly connected components to sparse neural networks. I proposed techniques to overcome
-the challenges of insufficient parallelism, indirect memory access pattern and load imbalance,
-which leads to substantial speedups over previous parallel CPU and GPU solutions.
+Design and implemented various parallel graph algorithms, frameworks and benchmarks on the GPU,
+including vertex coloring, strongly connected components and sparse neural networks.
 <br /> </p>
 
 <h3>2011 - 2014 </h3>
@@ -413,12 +420,8 @@ which leads to substantial speedups over previous parallel CPU and GPU solutions
 <b>Cache Architecture for Irregular Algorithms on GPU</b> <br />
 <i>With</i> Prof. <a href="http://impact.crhc.illinois.edu/People/Hwu/hwu.aspx">Wen-Mei Hwu</a>
 and Prof. <a href="https://dblp.org/pid/w/ZhiyingWang-3.html">Zhiying Wang</a> <br />
-Designed and implemented efficient cache architectures [4,5,7,9] for irregular applications on
-GPU. Irregular algorithms, e.g., graph algorithms, have indirect memory accesses that cause
-memory divergence on GPU. The massive amount of diverged memory requests causes severe
-cache contention and resource congestion. I proposed an adaptive cache management scheme
-[4] specifically for the GPU architecture, which effectively combines the techniques of warp
-throttling and cache bypassing, and achieves significant performance improvement.
+Designed and implemented efficient cache architectures for irregular applications on
+GPU.
 <br /> </p>
 
 </div>
@@ -457,6 +460,12 @@ Teaching Assistant to mentor students on labs and final projects and help with s
 <b>CS 380C: Advanced Topics in Compilers</b> (graduate course) <b>Fall 2019, UT Austin</b> <br />
 <i>With Professor Keshav Pingali</i> <br />
 Teaching Assistant to setup course project and mentor students
+<br /> </p>
+
+<p>
+<b>6.886: Algorithm Engineering</b> (graduate course) <b>Spring 2021, MIT</b> <br />
+<i>With Professor Julian Shun</i> <br />
+Guest lecture on Pangolin [<a href="https://people.csail.mit.edu/jshun/6886-s21/lectures/lecture15-2.pdf">Slides</a>]
 <br /> </p>
 
 </div>
@@ -538,6 +547,10 @@ First rank, Scholarship of Excellent Achievements, NUDT (top 3%) 2007
 <h2>Academic Service </h2>
 
 <p>Invited reviewer for
+<i>ACM Transactions on Architecture and Code Optimization</i>
+<br /> </p>
+
+<p>Invited reviewer for
 <i>ACM Transactions on Modeling and Performance Evaluation of Computing Systems</i>
 <br /> </p>
 
@@ -606,6 +619,8 @@ Contact<span class="glyphicon glyphicon-chevron-right"></span>
   <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Xuhao">DBLP Entry</a> <br />
   <a href="http://chenxuhao.github.io/">Another Homepage</a> <br />
   <a href="https://github.com/chenxuhao/">Github Entry</a> <br />
+  <a href="https://orcid.org/0000-0001-6470-3387">ORCID iD</a> <br />
+
 </p>
 
 </div>
