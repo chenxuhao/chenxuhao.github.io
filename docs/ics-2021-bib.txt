@@ -1,0 +1,7 @@
+@inproceedings{Sandslash,
+  title={Sandslash: a two-level framework for efficient graph pattern mining},
+  author={Chen, Xuhao and Dathathri, Roshan and Gill, Gurbinder and Hoang, Loc and Pingali, Keshav},
+  booktitle={Proceedings of the ACM International Conference on Supercomputing},
+  pages={378--391},
+  year={2021}
+}

@@ -1,0 +1,8 @@
+@inproceedings{DeepGalois,
+  title={Efficient Distribution for Deep Learning on Large Graphs},
+  author={Hoang, Loc and Chen, Xuhao and Lee, Hochan and Dathathri, Roshan and Gill, Gurbinder and Pingali, Keshav},
+  booktitle={Workshop on Graph Neural Networks and Systems},
+  volume={},
+  pages={1-9},
+  year={2021}
+}

@@ -1,0 +1,8 @@
+@inproceedings{DistTC,
+  title={DistTC: High performance distributed triangle counting},
+  author={Hoang, Loc and Jatala, Vishwesh and Chen, Xuhao and Agarwal, Udit and Dathathri, Roshan and Gill, Gurbinder and Pingali, Keshav},
+  booktitle={2019 IEEE High Performance Extreme Computing Conference (HPEC)},
+  pages={1--7},
+  year={2019},
+  organization={IEEE}
+}

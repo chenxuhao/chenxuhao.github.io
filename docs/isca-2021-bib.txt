@@ -1,0 +1,10 @@
+@INPROCEEDINGS{FlexMiner,
+  author={Chen, Xuhao and Huang, Tianhao and Xu, Shuotao and Bourgeat, Thomas and Chung, Chanwoo and Arvind},
+  booktitle={2021 ACM/IEEE 48th Annual International Symposium on Computer Architecture (ISCA)}, 
+  title={FlexMiner: A Pattern-Aware Accelerator for Graph Pattern Mining}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={581-594},
+  doi={10.1109/ISCA52012.2021.00052}
+}
