@@ -56,6 +56,9 @@
           <a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Home</a>
         </li>
         <li class="page-scroll">
+          <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
+        </li>
+        <li class="page-scroll">
           <a onclick="javascript:reset_menus();$('#tab-pub-content').show();" href="#publications">Publications</a>
         </li>
 		<li class="page-scroll">
@@ -130,12 +133,12 @@
 <div class="allshow" style="display:none;" id="tab-intro-content">
 <hr class="star-primary">
   <p class="lead">
-      I am a postdoctoral researcher in the <a href="http://csg.csail.mit.edu/">Computation Structures Group</a>
+      I am a Research Scientist in the <a href="http://csg.csail.mit.edu/">Computation Structures Group</a>
       at <a href="http://www.csail.mit.edu/">MIT CSAIL</a>,
       working with <a href="http://csg.csail.mit.edu/Users/arvind">Prof. Arvind</a>.
-      I work on domain-specific computer system and architecture,
-      mainly for data mining and machine learning on graphs.
-      <!-- I received my Ph.D. degree in Computer Science from <a href="http://www.nudt.edu.cn/index_eng.htm">National University of Defense Technology (NUDT)</a> in Dec. 2014. -->
+      I work on computer system and architecture for AI and Big-data,
+      with a focus on data mining and machine learning on graphs.
+      <!-- I received my Ph.D. in Computer Science from <a href="http://www.nudt.edu.cn/index_eng.htm">National University of Defense Technology (NUDT)</a> in 2014. -->
       Before joining MIT, I was a research fellow (from Jan. 2019 to Aug. 2020)
       <!--working with Prof. <a href="http://www.cs.utexas.edu/~pingali/">Keshav Pingali</a>-->
       in the <a href="https://iss.oden.utexas.edu/">Intelligent Software Systems group</a>
@@ -154,10 +157,50 @@
 </div>
 </section>
 
-<section id="publications">
+<!-- News Section -->
+<section id="news">
 <div class="container lead">
 <div style="text-align: left; margin-top:10px" class="col-md-12">
 <i class="noshow" style="display:none;" id="tab-2">
+<button class="btn btn-default btn-lg btn-block"
+        style="display: block; width: 100%;"
+        onclick="javascript:$('#tab-news-content').toggle();">
+    Projects  <span class="glyphicon glyphicon-chevron-right"></span>
+</button>
+</i>
+<div class="allshow" style="display:none;" id="tab-news-content">
+<hr class="star-primary">
+
+<h2>News</h2>
+
+<p>
+<font color="green"><strong> [UPCOMING] </strong></font> 
+<strong>October 29, 2021</strong> Invited talk at Boston University
+<br /> </p>
+
+<p>
+<font color="green"><strong> [UPCOMING] </strong></font> 
+<strong>October 22, 2021</strong> Invited talk at Brandies University
+<br /> </p>
+
+<p>
+<strong>April 28, 2021</strong> Invited talk at MIT <a href=http://fast-code.csail.mit.edu/">fast-code seminar</a> <br />
+<br /> </p>
+
+<p>
+<strong>April 7, 2021</strong> Invited talk at University of Connecticut<br />
+<br /> </p>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- Publications Section -->
+<section id="publications">
+<div class="container lead">
+<div style="text-align: left; margin-top:10px" class="col-md-12">
+<i class="noshow" style="display:none;" id="tab-3">
 <button class="btn btn-default btn-lg btn-block"
         style="display: block; width: 100%;"
         onclick="javascript:$('#tab-pub-content').toggle();">
@@ -435,7 +478,7 @@ GPU.
 <section id="teach">
 <div class="container lead">
 <div style="text-align: left; margin-top:10px" class="col-md-12">
-<i class="noshow" style="display:none;" id="tab-3">
+<i class="noshow" style="display:none;" id="tab-5">
 <button class="btn btn-default btn-lg btn-block"
         style="display: block; width: 100%;"
         onclick="javascript:$('#tab-teach-content').toggle();">
@@ -479,7 +522,7 @@ Guest lecture on Pangolin [<a href="https://people.csail.mit.edu/jshun/6886-s21/
 <section id="awards">
 <div class="container lead">
 <div style="text-align: left; margin-top:10px" class="col-md-12">
-<i class="noshow" style="display:none;" id="tab-1">
+<i class="noshow" style="display:none;" id="tab-5">
 <button class="btn btn-default btn-lg btn-block"
         style="display: block; width: 100%;"
         onclick="javascript:$('#tab-awards-content').toggle();">
@@ -549,6 +592,10 @@ First rank, Scholarship of Excellent Achievements, NUDT (top 3%) 2007
 <h2>Academic Service </h2>
 
 <p>Invited reviewer for
+<i>IEEE Transactions on Knowledge and Data Engineering</i>
+<br /> </p>
+
+<p>Invited reviewer for
 <i>ACM Transactions on Architecture and Code Optimization</i>
 <br /> </p>
 
@@ -573,7 +620,7 @@ First rank, Scholarship of Excellent Achievements, NUDT (top 3%) 2007
 <section id="grants">
 <div class="container lead">
 <div style="text-align: left; margin-top:10px" class="col-md-12">
-<i class="noshow" style="display:none;" id="tab-6">
+<i class="noshow" style="display:none;" id="tab-7">
 <button class="btn btn-default btn-lg btn-block"
         style="display: block; width: 100%;"
         onclick="javascript:$('#tab-grants-content').toggle();">
@@ -604,7 +651,7 @@ Co-wrote successful grant proposal titled Energy-efficient Asynchronous Manycore
 <section id="contact">
 <div class="container lead">
 <div style="text-align: left; margin-top:10px" class="col-md-12">
-<i class="noshow" style="display:none;" id="tab-9">
+<i class="noshow" style="display:none;" id="tab-8">
 <button class="btn btn-default btn-lg btn-block"
         style="display: block; width: 100%;"
         onclick="javascript:$('#tab-contact-content').toggle();">
