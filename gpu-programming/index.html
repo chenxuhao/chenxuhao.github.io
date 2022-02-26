@@ -103,32 +103,33 @@ I can help arrange access to a remote CUDA-capable machine for students without 
 
 <p> <a href="http://webgpu.com/">WebGPU.com A System for Online GPU Development</a> </p>
 
+<p> <a href="https://courses.nvidia.com/courses/course-v1:DLI+C-AC-02+V1/about">Fundamentals of Accelerated Computing with CUDA Python</a> </p>
+
 <p> <a href="http://impact.crhc.illinois.edu/shared/PR/SC16_PMPP_Educators_Sessions_FINAL.pdf">Teach GPU Accelerating Computing: Hands-on with NVIDIA Teaching Kit for Educators</a> </p>
 
 <h2> Schedule and Slides (subject to change)</h2>
 
 <table cellspacing="0">
-<tr> <td> 3 / 27 </td> <td> <a href="Lecture01-intro.pdf">Course Introduction</a> </td> <td> </td> </tr>
+<tr> <td> 3 / 27 </td> <td> <a href="Lecture01-intro.pdf">Course Introduction</a> </td> <td> <a href="https://cse.usf.edu/~haozheng/ref/gpu_computing.pdf">Paper reading</a> </td> </tr>
 <tr> <td> 3 / 29 </td> <td> <a href="Lecture02-cuda-c.pdf">Intro to CUDA C</a> </td> <td> <a href="assignments/axpy.tar.gz">axpy</a> </td> </tr>
-<tr> <td> 4 / 03 </td> <td> <a href="Lecture03-model.pdf">CUDA parallelism model</a> </td> <td> </td> </tr>
+<tr> <td> 4 / 03 </td> <td> <a href="Lecture03-model.pdf">CUDA parallelism model</a> </td> <td> <a href="https://dl.acm.org/doi/pdf/10.1145/1365490.1365500">Paper reading</a> </td> </tr>
 <tr> <td> 4 / 05 </td> <td> <a href="Lecture04-locality.pdf">Memory and data locality</a> <br/> <a href="Lecture05-thread.pdf">Thread execution efficiency</a> </td> <td> <a href="assignments/tiled-sgemm.tar.gz">TiledMatrixMultiplication</a> </td> </tr>
-<tr> <td> 4 / 10 </td> <td> <a href="Lecture06-memory.pdf">Memory performance</a> <br/> <a href="Lecture07-stencil.pdf">Stencil pattern</a> </td> <td> </td> </tr>
-<tr> <td> 4 / 12 </td> <td> <a href="Lecture08-scan.pdf">Prefix sum pattern</a> </td> <td> </td> </tr>
-<tr> <td> 4 / 17 </td> <td> <a href="Lecture09-histogram.pdf">Histogram pattern</a> </td> <td> </td> </tr>
-<tr> <td> 4 / 19 </td> <td> <a href="Lecture10-spmv.pdf">Sparse matrix pattern</a> </td> <td> TiledMatrixMultiplication due  </td> </tr>
+<tr> <td> 4 / 10 </td> <td> <a href="Lecture06-memory.pdf">Memory performance</a> <br/> <a href="Lecture07-stencil.pdf">Stencil pattern</a> </td> <a href="https://uweb.engr.arizona.edu/~ece569a/Readings/GPU_Papers/1.ComputingExperiences.pdf">Paper reading</a> <td> </td> </tr>
+<tr> <td> 4 / 12 </td> <td> <a href="Lecture08-scan.pdf">Prefix sum pattern</a> </td> <td> <a href="https://developer.download.nvidia.com/compute/cuda/2_2/sdk/website/projects/scan/doc/scan.pdf">Paper reading</a> </td> </tr>
+<tr> <td> 4 / 17 </td> <td> <a href="Lecture09-histogram.pdf">Histogram pattern</a> </td> <td> TiledMatrixMultiplication due </td> </tr>
+<tr> <td> 4 / 19 </td> <td> <a href="Lecture10-spmv.pdf">Sparse matrix pattern</a> </td> <td> <a href="https://www.nvidia.com/docs/IO/77944/sc09-spmv-throughput.pdf">Paper reading</a> </td> </tr>
 <tr> <td> 4 / 24 </td> <td> <a href="Lecture11-reduction.pdf">Reduction pattern</a> </td> <td> <a href="assignment2">Assignment 2</a> </td>  </tr>
-<tr> <td> 4 / 26 </td> <td> <a href="Lecture12-bfs.pdf">Graph traversal pattern</a> </td> <td> </td> </tr>
-<tr> <td> 5 / 01 </td> <td> <a href="Lecture13-interface.pdf">Advanced host / device interface</a> <br/> <a href="Lecture14-stream.pdf">Streams, events, and concurrency</a> </td> <td> </td> </tr>
-<tr> <td> 5 / 03 </td> <td> <a href="Lecture15-dynamic-parallelism.pdf">Dynamic parallelism / recursion</a> </td> <td> </td> </tr>
+<tr> <td> 4 / 26 </td> <td> <a href="Lecture12-bfs.pdf">Graph traversal pattern</a> </td> <td> <a href="https://mgarland.org/files/papers/gpubfs.pdf">Paper reading</a> </td> </tr>
+<tr> <td> 5 / 01 </td> <td> <a href="Lecture13-interface.pdf">Advanced host / device interface</a> <br/> <a href="Lecture14-stream.pdf">Streams, events, and concurrency</a> </td> <td> <a href="https://mgarland.org/files/papers/gpusort-ipdps09.pdf">Paper reading</a> </td> </tr>
+<tr> <td> 5 / 03 </td> <td> <a href="Lecture15-dynamic-parallelism.pdf">Dynamic parallelism / recursion</a> </td> <td> <a href="https://static.twoday.net/romanov/files/Exzerpt2.pdf">Paper reading</a> </td> </tr>
 <tr> <td> 5 / 08 </td> <td> <a href="Lecture16-float.pdf">Floating point considerations</a> <br />  <a href="Lecture17-intrinsic.pdf">Intrinsic Functions</a> </td> <td> Assignment 2 due <br /> <a href="finalProject"/>Final project</a> </td> </tr>
-<tr> <td> 5 / 10 </td> <td> <a href="Lecture18-warp-shuffle.pdf">In-warp shuffles</a> </td> <td> </td> </tr>
+<tr> <td> 5 / 10 </td> <td> <a href="Lecture18-warp-shuffle.pdf">In-warp shuffles</a> </td> <a href="http://users.ece.utexas.edu/~ljohn/teaching/382m-15/reading/lee.pdf">Paper reading</a> <td> </td> </tr>
 <tr> <td> 5 / 15 </td> <td> <a href="Lecture19-multi-gpu.pdf">Multi-GPU programming</a> </td> <td> Final project proposal due </td> </tr>
-<tr> <td> 5 / 17 </td> <td> cuDNN <a href="http://dlsys.cs.washington.edu/schedule">CSE 599g</a> <br /> <br /> 5/18 1-2pm @CSE305 </td> <td> </td> </tr>
-<tr> <td> 5 / 22 </td> <td> <a href="Lecture20-opencl-openacc.pdf">OpenCL / OpenACC</a> </td> <td> </td> </tr>
-<tr> <td> 5 / 24 </td> <td> Deep Learning and Tensor Core </td> <td> </td> </tr>
-<tr> <td> 5 / 29 </td> <td> Graph Processing with GPU </td> <td> </td> </tr>
-<tr> <td> 5 / 31 </td> <td> Ray Tracing </td> <td> </td> </tr>
-<tr> <td> 6 / 01 </td> <td> Misc  </td> <td> Final project due </td> </tr>
+<tr> <td> 5 / 17 </td> <td> <a href="Lecture20-library.pdf">Using CUDA Libraries</a> </td> <td> <a href="http://dlsys.cs.washington.edu/schedule">cuDNN</a> </td> </tr>
+<tr> <td> 5 / 22 </td> <td> <a href="Lecture21-opencl-openacc.pdf">OpenCL / OpenACC</a> </td> <td> </td> <a href="https://engineering.purdue.edu/paramnt/publications/PPOPP09-LME.pdf">Paper reading</a> </td> </tr>
+<tr> <td> 5 / 24 </td> <td> <a href="Lecture22-tensor.pdf">Deep Learning and Tensor Core </td> <td> <a href="https://arxiv.org/pdf/1811.09736.pdf">Paper reading</a> </td> </tr>
+<tr> <td> 5 / 29 </td> <td> <a href="Lecture23-graph.pdf">Graph Processing with GPU</a> </td> <td> <a href="https://readingxtra.github.io/docs/gpu-graph/WangPPoPP2016.pdf">Paper reading</a> </td> </tr>
+<tr> <td> 5 / 31 </td> <td> <a href="https://developer.nvidia.com/blog/accelerated-ray-tracing-cuda/">Ray Tracing</a> </td> <td> Final project due </td> </tr>
 </table>
 
 </div>
