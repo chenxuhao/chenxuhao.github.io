@@ -108,24 +108,23 @@ I can help arrange access to a remote CUDA-capable machine for students without 
 <h2> Schedule and Slides (subject to change)</h2>
 
 <table cellspacing="0">
-<tr> <td> 3 / 27 </td> <td> <a href="Lecture01.pdf">Course Introduction</a> </td> <td> </td> </tr>
-<tr> <td> 3 / 29 </td> <td> <a href="Lecture02.pdf">Intro to CUDA C</a> </td> <td> <a href="assignments/axpy.tar.gz">axpy</a> </td> </tr>
-<tr> <td> 4 / 03 </td> <td> <a href="Lecture03.pdf">CUDA parallelism model</a> </td> <td> </td> </tr>
-<tr> <td> 4 / 05 </td> <td> <a href="Lecture04.pdf">Memory and data locality</a> <br/>
-<a href="Lecture05.pdf">Thread execution / computational efficiency</a> </td> <td> <a href="assignments/TiledMatrixMultiplication.tar.gz">TiledMatrixMultiplication</a> </td> </tr>
-<tr> <td> 4 / 10 </td> <td> <a href="Lecture06.pdf">Memory performance</a> <br/> <a href="Lecture07.pdf">Stencil pattern</a> </td> <td> </td> </tr>
-<tr> <td> 4 / 12 </td> <td> <a href="Lecture08.pdf">Prefix sum pattern</a> </td> <td> </td> </tr>
-<tr> <td> 4 / 17 </td> <td> <a href="Lecture09.pdf">Histogram pattern</a> </td> <td> </td> </tr>
+<tr> <td> 3 / 27 </td> <td> <a href="Lecture01-intro.pdf">Course Introduction</a> </td> <td> </td> </tr>
+<tr> <td> 3 / 29 </td> <td> <a href="Lecture02-cuda-c.pdf">Intro to CUDA C</a> </td> <td> <a href="assignments/axpy.tar.gz">axpy</a> </td> </tr>
+<tr> <td> 4 / 03 </td> <td> <a href="Lecture03-model.pdf">CUDA parallelism model</a> </td> <td> </td> </tr>
+<tr> <td> 4 / 05 </td> <td> <a href="Lecture04-locality.pdf">Memory and data locality</a> <br/> <a href="Lecture05-thread.pdf">Thread execution efficiency</a> </td> <td> <a href="assignments/tiled-sgemm.tar.gz">TiledMatrixMultiplication</a> </td> </tr>
+<tr> <td> 4 / 10 </td> <td> <a href="Lecture06-memory.pdf">Memory performance</a> <br/> <a href="Lecture07-stencil.pdf">Stencil pattern</a> </td> <td> </td> </tr>
+<tr> <td> 4 / 12 </td> <td> <a href="Lecture08-scan.pdf">Prefix sum pattern</a> </td> <td> </td> </tr>
+<tr> <td> 4 / 17 </td> <td> <a href="Lecture09-histogram.pdf">Histogram pattern</a> </td> <td> </td> </tr>
 <tr> <td> 4 / 19 </td> <td> <a href="Lecture10.pdf">Sparse matrix pattern</a> </td> <td> TiledMatrixMultiplication due  </td> </tr>
-<tr> <td> 4 / 24 </td> <td> <a href="Lecture11.pdf">Merge sort pattern</a> </td> <td> <a href="assignment2">Assignment 2</a> </td>  </tr>
-<tr> <td> 4 / 26 </td> <td> <a href="Lecture12.pdf">Graph search pattern</a> </td> <td> </td> </tr>
-<tr> <td> 5 / 01 </td> <td> <a href="Lecture13.pdf">Advanced host / device interface</a> <br/> <a href="Lecture14.pdf">Streams, events, and concurrency</a> </td> <td> </td> </tr>
-<tr> <td> 5 / 03 </td> <td> <a href="Lecture15.pdf">Dynamic parallelism / recursion</a> </td> <td> </td> </tr>
-<tr> <td> 5 / 08 </td> <td> <a href="Lecture16.pdf">Floating point considerations</a> <br />  <a href="Lecture17.pdf">Intrinsic Functions</a> </td> <td> Assignment 2 due <br /> <a href="finalProject"/>Final project</a> </td> </tr>
-<tr> <td> 5 / 10 </td> <td> <a href="Lecture18.pdf">In-warp shuffles</a> </td> <td> </td> </tr>
-<tr> <td> 5 / 15 </td> <td> <a href="Lecture19.pdf">Multi-GPU programming</a> </td> <td> Final project proposal due </td> </tr>
+<tr> <td> 4 / 24 </td> <td> <a href="Lecture11-reduction.pdf">Reduction pattern</a> </td> <td> <a href="assignment2">Assignment 2</a> </td>  </tr>
+<tr> <td> 4 / 26 </td> <td> <a href="Lecture12-bfs.pdf">Graph traversal pattern</a> </td> <td> </td> </tr>
+<tr> <td> 5 / 01 </td> <td> <a href="Lecture13.pdf">Advanced host / device interface</a> <br/> <a href="Lecture15-stream.pdf">Streams, events, and concurrency</a> </td> <td> </td> </tr>
+<tr> <td> 5 / 03 </td> <td> <a href="Lecture14-dynamic-parallelism.pdf">Dynamic parallelism / recursion</a> </td> <td> </td> </tr>
+<tr> <td> 5 / 08 </td> <td> <a href="Lecture16-float.pdf">Floating point considerations</a> <br />  <a href="Lecture18-intrinsic.pdf">Intrinsic Functions</a> </td> <td> Assignment 2 due <br /> <a href="finalProject"/>Final project</a> </td> </tr>
+<tr> <td> 5 / 10 </td> <td> <a href="Lecture17-warp-shuffle.pdf">In-warp shuffles</a> </td> <td> </td> </tr>
+<tr> <td> 5 / 15 </td> <td> <a href="Lecture19-multi-gpu.pdf">Multi-GPU programming</a> </td> <td> Final project proposal due </td> </tr>
 <tr> <td> 5 / 17 </td> <td> cuDNN <a href="http://dlsys.cs.washington.edu/schedule">CSE 599g</a> <br /> <br /> 5/18 1-2pm @CSE305 </td> <td> </td> </tr>
-<tr> <td> 5 / 22 </td> <td> <a href="Lecture20.pdf">OpenCL / OpenACC</a> </td> <td> </td> </tr>
+<tr> <td> 5 / 22 </td> <td> <a href="Lecture20-opencl-openacc.pdf">OpenCL / OpenACC</a> </td> <td> </td> </tr>
 <tr> <td> 5 / 24 </td> <td> Deep Learning and Tensor Core </td> <td> </td> </tr>
 <tr> <td> 5 / 29 </td> <td> Graph Processing with GPU </td> <td> </td> </tr>
 <tr> <td> 5 / 31 </td> <td> Ray Tracing </td> <td> </td> </tr>
