@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Parallel Computing</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+<style>
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+div#content {
+	padding:			50px;
+	margin-left:		auto;
+	margin-right:		auto;
+	width:	    		800px;
+	min-height:			420px;
+	background-color:	#ffffff;
+	position:			relative;
+}
+h1 {
+	color:			#80bd01;
+	font-family: 'Lato', sans-serif;
+}
+h2 {
+	color:			#80bd01;
+	font-family: 'Lato', sans-serif;
+}
+h3 {
+	color:			#80bd01;
+	font-family: 'Lato', sans-serif;
+	margin-left:  20px;
+}
+h4 {
+	margin-left:  20px;
+}
+a {
+	text-decoration: none;
+	color: #000;
+	border-bottom: 1px solid #d4d4d4;
+}
+a:hover {
+	color: 			#fb6300;
+}
+table {
+	margin: 20px;
+	margin-left: 40px;
+	border:#ccc 1px solid;
+}
+table tr {
+	text-align: center;
+	padding-left:20px;
+}
+table td {
+	padding: 8px 24px;
+	border: 1px solid #e0e0e0;
+}
+p {
+	margin-left: 40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="content">
+
+<h2 style="text-align:center"> TBD </h2>
+<h1 style="text-align:center"> Parallel Computing </h1>
+
+<center>
+<h4> Location, Time <br/>
+Instructor: <a href="https://chenxuhao.github.io/">Xuhao Chen</a> <br/>
+Office Hours: Time, Location </h4>
+</center>
+
+<h2> Course Description </h2>
+
+<p>This course is a research-oriented course on algorithm engineering, which will cover both the theory and practice of algorithms and data structures.
+  Students will learn about models of computation, algorithm design and analysis, and performance engineering of algorithm implementations.
+  We will study the design and implementation of sequential, parallel, cache-efficient, external-memory, and write-efficient algorithms for fundamental problems in computing.
+  Many of the principles of algorithm engineering will be illustrated in the context of parallel algorithms and graph problems.
+  Students will read and present research papers, write paper reviews, complete assignments that involve both theory and implementation,
+  participate in classroom discussions, and complete a semester-long research project.
+  Class time will consist of lectures, student presentations, and group project meetings.
+  This course is suitable for graduate students or advanced undergraduates.
+  Mathematical maturity and familiarity with algorithm analysis and performance engineering will be assumed.</p>
+
+<h3> Prerequisites </h3>
+
+<p>Students taking this course should be familiar with C programming.</p>
+
+<p>Prior knowledge of computer architecture concepts such as data locality will be useful but not required.</p>
+
+<h3> Grading </h3>
+
+<p>Grades for this course will be based on a series of 3-5 programming assignments.</p>
+
+<h3> Textbook (Optional) </h3>
+
+<p> <a href="">TBD</a> </p>
+
+<h3> Computing Resources </h3>
+
+<p> We will be using Amazon Web Services. </p>
+
+<h2> Schedule and Slides</h2>
+
+<table cellspacing="0">
+<tr> <td> 3 / 27 </td> <td> <a href="Lecture01-intro.pdf">Course Introduction</a> </td> <td> <a href="https://cse.usf.edu/~haozheng/ref/gpu_computing.pdf">Paper reading</a> </td> </tr>
+<tr> <td> 3 / 29 </td> <td> <a href="Lecture02.pdf">Parallel Algorithms</a> </td> <td> <a href="assignments/axpy.tar.gz">axpy</a> </td> </tr>
+<tr> <td> 4 / 03 </td> <td> <a href="Lecture03.pdf">Parallel Graph Traversal</a> </td> <td> <a href="https://dl.acm.org/doi/pdf/10.1145/1365490.1365500">Paper reading</a> </td> </tr>
+<tr> <td> 4 / 05 </td> <td> <a href="Lecture04.pdf">Shared-Memory Graph Algorithms</a> </td> <td> <a href="assignments/tiled-sgemm.tar.gz">TiledMatrixMultiplication</a> <br/> <a href="http://www.cs.columbia.edu/cg/pdfs/28_GPUSim.pdf">Paper reading</a> </td> </tr>
+<tr> <td> 4 / 10 </td> <td> <a href="Lecture06.pdf">Sorting and In-Place Algorithms</a> </td> <td> <a href="https://uweb.engr.arizona.edu/~ece569a/Readings/GPU_Papers/1.ComputingExperiences.pdf">Paper reading</a> </td> </tr>
+<tr> <td> 4 / 12 </td> <td> <a href="Lecture08.pdf">External-Memory Algorithms</a> </td> <td> <a href="https://developer.download.nvidia.com/compute/cuda/2_2/sdk/website/projects/scan/doc/scan.pdf">Paper reading</a> </td> </tr>
+<tr> <td> 4 / 17 </td> <td> <a href="Lecture09.pdf">Cache-Oblivious Algorithms</a> </td> <td> TiledMatrixMultiplication due </td> </tr>
+<tr> <td> 4 / 19 </td> <td> <a href="Lecture10.pdf">Parallel Cache-Oblivious Algorithms</a> </td> <td> <a href="https://www.nvidia.com/docs/IO/77944/sc09-spmv-throughput.pdf">Paper reading</a> </td> </tr>
+<tr> <td> 4 / 24 </td> <td> <a href="Lecture11.pdf">Distributed Graph Frameworks</a> </td> <td> <a href="assignment2">Assignment 2</a> </td>  </tr>
+<tr> <td> 4 / 26 </td> <td> <a href="Lecture12.pdf">Disk-based Graph Frameworks</a> </td> <td> <a href="https://mgarland.org/files/papers/gpubfs.pdf">Paper reading</a> </td> </tr>
+<tr> <td> 5 / 01 </td> <td> <a href="Lecture13.pdf">Locality in Graph Processing</a> </td> <td> <a href="https://mgarland.org/files/papers/gpusort-ipdps09.pdf">Paper reading</a> <br/> <a href="https://faculty.cc.gatech.edu/~hyesoon/hong_isca09.pdf">Paper reading</a> </td> </tr>
+<tr> <td> 5 / 03 </td> <td> <a href="Lecture15.pdf">NVRAM and Streaming Graph</a> </td> <td> <a href="https://static.twoday.net/romanov/files/Exzerpt2.pdf">Paper reading</a> </td> </tr>
+<tr> <td> 5 / 08 </td> <td> <a href="Lecture16.pdf">Subgraph Counting</a> </td> <td> Assignment 2 due <br /> <a href="finalProject"/>Final project</a> </td> </tr>
+<tr> <td> 5 / 10 </td> <td> <a href="Lecture18.pdf">Subgraph Finding Frameworks</a> </td> <td> <a href="http://users.ece.utexas.edu/~ljohn/teaching/382m-15/reading/lee.pdf">Paper reading</a> </td> </tr>
+<tr> <td> 5 / 15 </td> <td> <a href="Lecture19.pdf">Parallel Subgraph Finding and Peeling</a> </td> <td> Final project proposal due </td> </tr>
+<tr> <td> 5 / 17 </td> <td> <a href="Lecture20.pdf">Graph Coloring and GPU Graph Processing</a> </td> <td> <a href="http://dlsys.cs.washington.edu/schedule">cuDNN</a> </td> </tr>
+<tr> <td> 5 / 22 </td> <td> <a href="Lecture21.pdf">Aggregation and Join</a> </td> <td> <a href="https://engineering.purdue.edu/paramnt/publications/PPOPP09-LME.pdf">Paper reading</a> </td> </tr>
+<tr> <td> 5 / 24 </td> <td> <a href="Lecture22.pdf">Union Find</td> <td> <a href="https://arxiv.org/pdf/1811.09736.pdf">Paper reading</a> </td> </tr>
+<tr> <td> 5 / 29 </td> <td> <a href="Lecture23.pdf">Graph Compression and Reordering</a> </td> <td> <a href="https://readingxtra.github.io/docs/gpu-graph/WangPPoPP2016.pdf">Paper reading</a> </td> </tr>
+<tr> <td> 5 / 31 </td> <td> <a href="Lecture24.pdf">Graph Clustering</a> </td> <td> <a href="https://prashantpandey.github.io/files/gpu_kmer.pdf">Paper reading</a> <br/> <a href="">Paper reading</a> </td> </tr>
+<tr> <td> 5 / 31 </td> <td> <a href="Lecture25.pdf">Suffix Arrays and Trees</a> </td> <td> Final project due </td> </tr>
+</table>
+
+</div>
+
+</body>
+</html>
