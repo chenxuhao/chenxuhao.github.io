@@ -1,0 +1,218 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Graph AI</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+<style>
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+div#content {
+	padding:			50px;
+	margin-left:		auto;
+	margin-right:		auto;
+	width:	    		800px;
+	min-height:			420px;
+	background-color:	#ffffff;
+	position:			relative;
+}
+h1 {
+	color:			#80bd01;
+	font-family: 'Lato', sans-serif;
+}
+h2 {
+	color:			#80bd01;
+	font-family: 'Lato', sans-serif;
+}
+h3 {
+	color:			#80bd01;
+	font-family: 'Lato', sans-serif;
+	margin-left:  20px;
+}
+h4 {
+	margin-left:  20px;
+}
+a {
+	text-decoration: none;
+	color: #000;
+	border-bottom: 1px solid #d4d4d4;
+}
+a:hover {
+	color: 			#fb6300;
+}
+table {
+	margin: 20px;
+	margin-left: 40px;
+	border:#ccc 1px solid;
+}
+table tr {
+	text-align: center;
+	padding-left:20px;
+}
+table td {
+	padding: 8px 24px;
+	border: 1px solid #e0e0e0;
+}
+p {
+	margin-left: 40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="content">
+
+<h1 style="text-align:center"> Graph AI </h1>
+<h2 style="text-align:center">
+  <a href="https://research.google/teams/graph-mining/">Graph Mining,</a>
+  <a href="">Graph Machine Learning,</a> and
+  <a href="https://towardsdatascience.com/understanding-graph-convolutional-networks-for-node-classification-a2bfdb7aba7b">Graph Neural Networks</a></h2>
+
+<center>
+<h4>
+<a href="https://chenxuhao.github.io/">Xuhao Chen</a> <br/>
+</h4>
+</center>
+
+<h2> Why Graph AI?</h2>
+
+<p>Recent success of deep learning has boosted research on almost every aspect of computer science.
+  Machine learning tasks, like object detection, machine translation, and speech recognition,
+  have been given new life with end-to-end deep learning paradigms like CNN, RNN, transformer, etc.</p>
+<p>Deep Learning is good at capturing hidden patterns of <strong>Euclidean</strong> data (images, text, videos).
+  But what about applications where data is generated from <strong>non-Euclidean</strong> domains,
+  represented as graphs with <strong>complex relationships</strong> and <strong>interdependencies</strong> between objects?</p>
+<p>That’s where <a href= "https://aimagazine.com/machine-learning/what-graph-ai">Graph AI</a>
+  or <a href= "https://arxiv.org/pdf/2105.00696.pdf">Graph ML</a> come in,
+  which we’ll explore in this article.</p>
+
+<h2>What is Graph AI and Graph ML?</h2>
+
+<p>We know that conventional AI learns from independent data samples, like images.
+However, in many application scenarios, data objects are not isolated, like people in the social networks, they are inherently connected or corelated.
+So Graph AI can leverage this relational information in the data to potentially learn better, by introducing a graph to model the relationships.
+</p>
+<p>
+Next, we’ll start with graph theories and basic definitions, move on to GNN forms and principles, and finish with some applications of GNN.
+</p>
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img data-attachment-id="31150" data-permalink="" data-orig-file="images/gai.png?fit=160%2C144&amp;ssl=1" data-orig-size="1863,651" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Directed-graph" data-image-description="" data-image-caption="" data-medium-file="images/gai.png?fit=160%2C144&amp;ssl=1" data-large-file="images/gai.png?fit=160%2C144&amp;ssl=1" loading="lazy" width="600" height="150" src="images/gai.png?resize=160%2C144&#038;ssl=1" alt="Directed graph" class="wp-image-31150" data-recalc-dims="1"/><figcaption><strong>Leverage the Relational Information in the data</strong></figcaption></figure></div>
+
+<div class="table-of-contents">
+  <h2>Table of contents</h2>
+    <div class="table-elements">
+    <div class="table-element">
+    <a href="#definition">
+    <span>What is a Graph?</span>
+    </a>
+    </div>
+        <div class="table-element">
+    <a href="#GNN">
+        <span>Graph Neural Networks</span>
+    </a>
+    </div>
+    <div class="table-element">
+      <a href="#GCN">
+        <span>Graph Convolutional Networks</span>
+      </a>
+    </div>
+    <div class="table-element">
+      <a href="#Applications">
+        <span>Applications of GNN</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<p> </p>
+
+<h2 id="definition">What is a Graph?</h2>
+<p>The most fundamental part of GNN is a Graph.&nbsp;</p>
+
+<h3><strong>Why is it hard to analyze a graph?</strong></h3>
+<p></p>
+
+<h2 id="GNN">Graph Neural Network</h2>
+<p></p>
+
+<h3><strong>Why do Convolutional Neural Networks (CNNs) fail on graphs?</strong></h3>
+<p></p>
+<p>Next, I’ll discuss Graph Convolutional Networks (GCNs).</p>
+
+<h2 id="GCN">Graph Convolutional Networks</h2>
+<h3> </h3>
+
+<p> <strong>A</strong> <br/> B </p>
+
+<h2 id="Applications">Applications of GNNs</h2>
+
+<h3><strong>GNNs in computer vision</strong></h3>
+<p>Using regular CNNs, machines can distinguish and identify objects in images and videos.
+  Although there is still much development needed for machines to have the visual intuition of a human.
+  Yet, GNN architectures can be applied to image classification problems.&nbsp;</p>
+
+<p>One of these problems is scene graph generation,
+  in which the model aims to parse an image into a semantic graph that consists of objects and their semantic relationships.
+  Given an image, scene graph generation models detect and recognize objects and predict semantic relationships between pairs of objects.</p>
+
+<p>However, the number of applications of GNNs in computer vision is still growing.
+  It includes human-object interaction, few-shot image classification, and more.&nbsp;</p>
+
+<p> <a href=""> </a> </p>
+
+<h3><strong>GNNs in Natural Language Processing</strong></h3>
+<p>In NLP, we know that the text is a type of sequential data which can be described by an RNN or an LSTM.
+  However, graphs are heavily used in various NLP tasks, due to their naturalness and ease of representation.&nbsp;</p>
+
+<p>Recently, there has been a surge of interest in applying GNNs for a large number of NLP problems like text classification,
+  exploiting semantics in machine translation, user geolocation, relation extraction, or question answering.</p>
+
+<p>We know that every node is an entity and edges describe relations between them.
+  In NLP research, the problem of question answering is not recent.
+  But it was limited by the existing database. Although, with techniques like GraphSage (Hamilton et al.),
+  the methods can be generalized to previously unseen nodes.&nbsp;&nbsp;</p>
+
+<h3><strong>GNNs in traffic</strong></h3>
+<p>Forecasting traffic speed, volume or the density of roads in traffic networks is fundamentally important in a smart transportation system.
+  We can address the traffic prediction problem by using STGNNs.&nbsp;</p>
+
+<p>Considering the traffic network as a spatial-temporal graph where the nodes are sensors installed on roads,
+  the edges are measured by the distance between pairs of nodes,
+  and each node has the average traffic speed within a window as dynamic input features.</p>
+
+<h3><strong>GNNs in chemistry</strong></h3>
+
+<p>Chemists can use GNNs to research the graph structure of molecules or compounds.
+  In these graphs, nodes are atoms, and edges &#8211; chemical bonds.</p>
+
+<h3><strong>GNNs in other domains</strong></h3>
+
+<p>The application of GNNs is not limited to the above domains and tasks.
+  There have been attempts to apply GNNs to a variety of problems such as program verification,
+  program reasoning, social influence prediction, recommender systems, electrical health records modeling,
+  brain networks, and adversarial attack prevention.</p>
+
+<h2>A summary overview of GNNs Applications</h2>
+
+<h2>Conclusion</h2>
+
+<p>Over the past few years, graph neural networks have become
+  powerful and practical tools for any problem that can be modeled by graphs.&nbsp;</p>
+
+<p>In this article, we did a comprehensive overview of graph neural networks and introduced a wide range of GNN applications.</p>
+
+<p>If you stayed with me until the end &#8211; thank you for reading!</p>
+
+<h3>Resources</h3>
+
+<div class="custom-point-list">
+<ul><li><a href="https://arxiv.org/pdf/1812.08434.pdf" target="_blank" rel="noreferrer noopener nofollow">https://arxiv.org/pdf/1812.08434.pdf </a></li></ul>
+</div>
+
+</div>
+
+</body>
+</html>
