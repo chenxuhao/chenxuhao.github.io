@@ -68,7 +68,7 @@ p {
 <h1 style="text-align:center"> Graph AI </h1>
 <h3 style="text-align:center">
   <a href="https://research.google/teams/graph-mining/">Graph Mining,</a>
-  <a href="">Graph Machine Learning,</a> and
+  <a href="https://medium.com/stellargraph/knowing-your-neighbours-machine-learning-on-graphs-9b7c3d0d5896">Graph Machine Learning,</a> and
   <a href="https://towardsdatascience.com/understanding-graph-convolutional-networks-for-node-classification-a2bfdb7aba7b">Graph Neural Networks</a></h2>
 
 <center>
@@ -79,7 +79,7 @@ p {
 
 <h2> Why Graph AI?</h2>
 
-<p>Recent success of deep learning has boosted research on almost every aspect of computer science.
+<p>Recent success of deep learning has boosted research in almost every aspect of computer science.
   Machine learning tasks, like object detection, machine translation, and speech recognition,
   have been given new life with end-to-end deep learning paradigms like CNN, RNN, transformer, etc.</p>
 <p>Deep Learning is good at capturing hidden patterns of <strong>Euclidean</strong> data (images, text, videos).
@@ -92,14 +92,48 @@ p {
 <h2>What is Graph AI and Graph ML?</h2>
 
 <p>We know that conventional AI learns from independent data samples, like images.
-However, in many application scenarios, data objects are not isolated, like people in the social networks, they are inherently connected or corelated.
-So Graph AI can leverage this relational information in the data to potentially learn better, by introducing a graph to model the relationships.
-</p>
-<p>
-Next, we’ll start with graph theories and basic definitions, move on to GNN forms and principles, and finish with some applications of GNN.
+However, in many application scenarios, data objects are not isolated,
+like people in the social networks, they are inherently connected or corelated.
+So Graph AI can leverage this relational information in the data to potentially learn better,
+by introducing a graph to model the relationships.
 </p>
 
 <div class="wp-block-image"><figure class="aligncenter size-large"><img data-attachment-id="31150" data-permalink="" data-orig-file="images/gai.png?fit=160%2C144&amp;ssl=1" data-orig-size="1863,651" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Directed-graph" data-image-description="" data-image-caption="" data-medium-file="images/gai.png?fit=160%2C144&amp;ssl=1" data-large-file="images/gai.png?fit=160%2C144&amp;ssl=1" loading="lazy" width="600" height="150" src="images/gai.png?resize=160%2C144&#038;ssl=1" alt="Directed graph" class="wp-image-31150" data-recalc-dims="1"/><figcaption><strong>Leverage the Relational Information in the data</strong></figcaption></figure></div>
+
+<p>
+Generally speaking, Graph AI refers to any intelligent algorithms on graph data.
+Particularly, here we talk about data mining and machine learning on graphs, which are refered to as
+<a href="https://sites.cs.ucsb.edu/~xyan/tutorial/KDD08_graph_partI.pdf">Graph Mining</a> and
+<a href="https://medium.com/stellargraph/knowing-your-neighbours-machine-learning-on-graphs-9b7c3d0d5896">Graph Machine Learning</a>
+respectively. Graph Mining and Graph ML can be thought of as two different approaches to extract information from the graph data.
+But they are not orthogonal; instead, they have been deeply interacting with each other.
+</p>
+
+<p>
+<strong><a href="https://research.google/teams/graph-mining/">Graph Mining</a></strong>
+is a process in which data mining techniques are used in finding a pattern or relationship in the given real-world collection of graphs.
+By mining the graph, frequent substructures and relationships can be identified which helps in clustering the graph sets,
+finding a relationship between graph sets, or discriminating or characterizing graphs.
+In the literature, Graph Mining includes many <a href="https://sites.cs.ucsb.edu/~xyan/classes/CS595D.htm">subtopics</a>:
+<a href="https://www.geeksforgeeks.org/data-mining-graphs-and-networks/">Graph Pattern Mining</a>,
+Graph Classification, Graph Compression, Graph Dynamics,
+Graph Clustering, Link Analysis, Graph Summarization and Visualization, Graph Modeling and Statistics, etc.
+</p>
+
+<p>
+<strong><a href="http://web.stanford.edu/class/cs224w/">Graph Machine Learning</a></strong>
+uses machine learning techniques to process graph data,
+and leverages the power of the relation between entities that can be used for predictive, modeling, and analytics tasks.
+Graph ML covers many subtopics as well: Graph Embedding, Graph Neural Networks, Knowledge Graphs,
+Influence Maximization, Disease Outbreak Detection, Social Network Analysis, etc.
+With the booming ML, Graph ML has been shown to achieve better performance than the traditional graph mining approach,
+in many predictive and analytics tasks. So we will focus on graph ML in this article.
+</p>
+
+<p>
+Next, we’ll start with graph theory and graph algorithms,
+move on to graph ML and GNN, and finish with some applications of GNN.
+</p>
 
 <div class="table-of-contents">
   <h2>Table of contents</h2>
@@ -139,12 +173,16 @@ Next, we’ll start with graph theories and basic definitions, move on to GNN fo
 
 <div class="wp-block-image"><figure class="aligncenter size-large"><img data-attachment-id="31150" data-permalink="https://neptune.ai/directed-graph" data-orig-file="https://i0.wp.com/neptune.ai/wp-content/uploads/Directed-graph.png?fit=160%2C144&amp;ssl=1" data-orig-size="160,144" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Directed-graph" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/neptune.ai/wp-content/uploads/Directed-graph.png?fit=160%2C144&amp;ssl=1" data-large-file="https://i0.wp.com/neptune.ai/wp-content/uploads/Directed-graph.png?fit=160%2C144&amp;ssl=1" loading="lazy" width="160" height="144" src="https://i0.wp.com/neptune.ai/wp-content/uploads/Directed-graph.png?resize=160%2C144&#038;ssl=1" alt="Directed graph" class="wp-image-31150" data-recalc-dims="1"/><figcaption><em>Directed Graph | <a href="https://cdn-images-1.medium.com/max/800/0*qpdwFvjH3LzyCUO9.png" target="_blank" rel="noreferrer noopener nofollow" data-lbwps-width="160" data-lbwps-height="144">Source</a></em></figcaption></figure></div>
 
-<p>A graph can represent things like social media networks, or molecules. Think of nodes as users, and edges as connections.</p>
+<p>A graph can represent things like social media networks, or molecules.
+  Think of nodes as users, and edges as connections.</p>
 <p>A graph is often represented by <em><strong>A</strong></em>, an adjacency matrix.
   If a graph has <strong><em>n</em></strong> nodes, <strong><em>A</em></strong> has a dimension of <em><strong>(n × n)</strong></em>.
   Sometimes the nodes have a set of features (for example, a user profile).
   If the node has <em><strong>f</strong></em> numbers of features,
   then the node feature matrix <em><strong>X</strong></em> has a dimension of <em><strong>(n × f)</strong></em>.</p>
+<p>
+<a href="https://cacm.acm.org/magazines/2021/9/255040-the-future-is-big-graphs/fulltext">Graph Processing Systems</a>
+</p>
 
 <h3><strong>Why is it hard to analyze a graph?</strong></h3>
 
