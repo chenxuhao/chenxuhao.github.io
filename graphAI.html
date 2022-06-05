@@ -94,7 +94,8 @@ p {
 <p>We know that conventional AI learns from independent data samples, like images.
 However, in many application scenarios, data objects are not isolated,
 like people in the social networks, they are inherently connected or corelated.
-So Graph AI can leverage this <strong>relational information</strong> in the data to potentially learn better,
+In other words, the objects and relationships between objects from a <strong>graph</strong>.
+So <strong>Graph AI</strong> can leverage this <strong>relational information</strong> in the graph data to potentially learn better,
 by introducing a graph to model the relationships.
 </p>
 
@@ -173,7 +174,7 @@ move on to graph ML and GNN, and finish with some applications of GNN.
 <p> </p>
 
 <h2 id="definition">What is a Graph?</h2>
-<p>The most fundamental part of GNN is a Graph. In computer science, a <strong>graph is a data structure consisting of two components:
+<p>In computer science, a <strong>graph is a data structure consisting of two components:
   <a href="https://towardsdatascience.com/understanding-graph-convolutional-networks-for-node-classification-a2bfdb7aba7b">nodes</a>
   (vertices) and edges</strong>.
   A graph <em><strong>G</strong></em> can be defined as <em><strong>G = (V, E)</strong></em>, where<strong> <em>V</em></strong>
@@ -182,41 +183,44 @@ move on to graph ML and GNN, and finish with some applications of GNN.
 
 <div class="wp-block-image"><figure class="aligncenter size-large"><img data-attachment-id="31150" data-permalink="https://neptune.ai/directed-graph" data-orig-file="https://i0.wp.com/neptune.ai/wp-content/uploads/Directed-graph.png?fit=160%2C144&amp;ssl=1" data-orig-size="160,144" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Directed-graph" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/neptune.ai/wp-content/uploads/Directed-graph.png?fit=160%2C144&amp;ssl=1" data-large-file="https://i0.wp.com/neptune.ai/wp-content/uploads/Directed-graph.png?fit=160%2C144&amp;ssl=1" loading="lazy" width="160" height="144" src="https://i0.wp.com/neptune.ai/wp-content/uploads/Directed-graph.png?resize=160%2C144&#038;ssl=1" alt="Directed graph" class="wp-image-31150" data-recalc-dims="1"/><figcaption><em>Directed Graph | <a href="https://cdn-images-1.medium.com/max/800/0*qpdwFvjH3LzyCUO9.png" target="_blank" rel="noreferrer noopener nofollow" data-lbwps-width="160" data-lbwps-height="144">Source</a></em></figcaption></figure></div>
 
-<p>A graph can represent things like social media networks, or molecules.
-  Think of nodes as users, and edges as connections.</p>
+<p>A graph can represent things like social media networks, protein networks, molecules, financial transactions, etc.
+  For example, in a social network, nodes are the peopole,
+  and each edge represents the relationships between two people, such as friendship.</p>
 <p>A graph is often represented by <em><strong>A</strong></em>, an adjacency matrix.
   If a graph has <strong><em>n</em></strong> nodes, <strong><em>A</em></strong> has a dimension of <em><strong>(n × n)</strong></em>.
   Sometimes the nodes have a set of features (for example, a user profile).
   If the node has <em><strong>f</strong></em> numbers of features,
   then the node feature matrix <em><strong>X</strong></em> has a dimension of <em><strong>(n × f)</strong></em>.</p>
-<p>
-<a href="https://cacm.acm.org/magazines/2021/9/255040-the-future-is-big-graphs/fulltext">Graph Processing Systems</a>
-</p>
 
 <h3><strong>Why is it hard to analyze a graph?</strong></h3>
 
-<p>Graph data is so complex that it’s created a lot of challenges for existing machine learning algorithms.</p>
-<p>The reason is that conventional Machine Learning and Deep Learning tools are specialized in simple data types.
-  Like images with the same structure and size, which we can think of as fixed-size grid graphs.
-  Text and speech are sequences, so we can think of them as line graphs.</p>
-<p>But there are more complex graphs, without a fixed form, with a variable size of unordered nodes,
-  where nodes can have different amounts of neighbors.</p>
-<p>It also doesn’t help that existing machine learning algorithms have a core assumption that instances are independent of each other.
-  This is false for graph data, because each node is related to others by links of various types.</p>
+<p>
+  Graph data is so complex that it’s created a lot of challenges for existing machine learning (ML) algorithms and systems.
+  The reason is that conventional ML tools are specialized in simple data types,
+  like images with the same structure and size, which we can think of as fixed-size grid graphs.
+  But graphs is <em><strong>irregular</strong></em> with a variable size of unordered nodes,
+  where nodes can have different amounts of neighbors.
+  This is unfriendly to modern computer systems, particularly GPUs, which are optimized for regular data and algorithms.
+  Moreover, existing ML algorithms have a core assumption that instances are independent of each other.
+  This is false for graph data, as each node is related to others by links of various types.
+</p>
+
+<p>
+  <a href="https://cacm.acm.org/magazines/2021/9/255040-the-future-is-big-graphs/fulltext">Graph Processing Systems</a>
+</p>
 
 <h2 id="GNN">Graph Neural Network</h2>
-<p>Graph Neural Networks (GNNs) are a class of deep learning methods designed to perform inference on data described by graphs.
-GNNs are neural networks that can be directly applied to graphs,
-and provide an easy way to do node-level, edge-level, and graph-level prediction tasks.
-GNNs can do what Convolutional Neural Networks (CNNs) failed to do.</p>
+<p>
+  Graph Neural Networks (GNNs) are a class of ML methods designed for graphs.
+  GNNs borrows the idea of neural network (NN) and apply it to graphs,
+  which provide an easy way to do node-level, edge-level, and graph-level prediction tasks.
+  GNNs can do what Convolutional Neural Networks (CNNs) failed to do
+  (See <a href="https://neptune.ai/blog/graph-neural-network-and-some-of-gnn-applications#GNN">here</a> for explaination).
+  Representative GNN designs include Graph Convolutional Network (GCN) and GraphSAGE.
+</p>
 
-<h3><strong>Why do Convolutional Neural Networks (CNNs) fail on graphs?</strong></h3>
-<p>See <a href="https://neptune.ai/blog/graph-neural-network-and-some-of-gnn-applications#GNN">here</a> for explaination.</p>
-<p>Next, I’ll discuss Graph Convolutional Networks (GCNs).</p>
-
-<h2 id="GCN">Graph Convolutional Networks</h2>
-<h3> </h3>
-
+<!---
+<p>Next, I’ll discuss some representative GNN designs, including Graph Convolutional Networks (GCNs).</p>
 <p>
   GCNs were first introduced in “Spectral Networks and Deep Locally Connected Networks on Graphs” (Bruna et al, 2014),
   as a method for applying neural networks to graph-structured data.
@@ -231,10 +235,29 @@ GNNs can do what Convolutional Neural Networks (CNNs) failed to do.</p>
 The operations are usually done in this order.
 Together, they make up one network layer. We can combine one or more layers to form a complete GCN.
 </p>
+--->
 
 <h2 id="Applications">Applications of GNNs</h2>
 <p>
+  Although proposed not long ago, GNNs have been widely used to boost performance in numerous applications,
+  including product recomendation, fraud detection, social influence prediction, drug discovery,
+  electrical health records modeling, brain networks, and adversarial attack prevention etc.
+  Besides, there have been attempts to apply GNNs to a variety of computer system problems,
+  such as program verification and program reasoning.
+</p>
+
+<p>
 <a href="https://neptune.ai/blog/graph-neural-network-and-some-of-gnn-applications">Here</a> is a list of GNN applications.
+Let’s go through some applications across domains where GNN can resolve various challenges.
+</p>
+<h3><strong>GNNs in Fraud Detection</strong></h3>
+
+<p> <a href="https://github.com/safe-graph/graph-fraud-detection-papers">Papers on GNN-based fraud detection</a> </p>
+<p> <a href="https://ytongdou.com/files/GNN_Fraud_Talk.pdf">A Talk on GNN-based fraud detection</a> </p>
+<p> <a href=""> </a> </p>
+
+<!---
+<p>
 The problems that GNNs resolve can be classified into these categories:
 </p>
 
@@ -242,9 +265,6 @@ The problems that GNNs resolve can be classified into these categories:
 <ol><li><strong>Node Classification:</strong> the task here is to determine the labeling of samples (represented as nodes) by looking at the labels of their neighbors. Usually, problems of this type are trained in a semi-supervised way, with only a part of the graph being labeled.</li><li><strong>Graph Classification:</strong> the task here is to classify the whole graph into different categories. It’s like image classification, but the target changes into the graph domain. The applications of graph classification are numerous and range from determining whether a protein is an enzyme or not in bioinformatics, to categorizing documents in NLP, or social network analysis.</li><li><strong>Graph visualization:</strong> is an area of mathematics and computer science, at the intersection of geometric graph theory and information visualization. It is concerned with the visual representation of graphs that reveals structures and anomalies that may be present in the data and helps the user to understand the graphs.</li><li><strong>Link prediction:</strong> here, the algorithm has to understand the relationship between entities in graphs, and it also tries to predict whether there’s a connection between two entities. It’s essential in social networks to infer social interactions or to suggest possible friends to the users. It has also been used in recommender system problems and in predicting criminal associations.</li><li><strong>Graph clustering:</strong> refers to the <em>clustering</em> of data in the form of graphs. There are two distinct forms of clustering performed on graph data. Vertex clustering seeks to cluster the nodes of the graph into groups of densely connected regions based on either edge weights or edge distances. The second form of graph clustering treats the graphs as the objects to be clustered and clusters these objects based on similarity.</li></ol>
 </div>
 
-<p>
-Let’s go through some applications across domains where GNN can resolve various challenges.
-</p>
 
 <h3><strong>GNNs in computer vision</strong></h3>
 <p>Using regular CNNs, machines can distinguish and identify objects in images and videos.
@@ -257,8 +277,6 @@ Let’s go through some applications across domains where GNN can resolve variou
 
 <p>However, the number of applications of GNNs in computer vision is still growing.
   It includes human-object interaction, few-shot image classification, and more.</p>
-
-<p> <a href=""> </a> </p>
 
 <h3><strong>GNNs in Natural Language Processing</strong></h3>
 <p>In NLP, we know that the text is a type of sequential data which can be described by an RNN or an LSTM.
@@ -285,23 +303,7 @@ Let’s go through some applications across domains where GNN can resolve variou
 <p>Chemists can use GNNs to research the graph structure of molecules or compounds.
   In these graphs, nodes are atoms, and edges &#8211; chemical bonds.</p>
 
-<h3><strong>GNNs in other domains</strong></h3>
-
-<p>The application of GNNs is not limited to the above domains and tasks.
-  There have been attempts to apply GNNs to a variety of problems such as program verification,
-  program reasoning, social influence prediction, recommender systems, electrical health records modeling,
-  brain networks, and adversarial attack prevention.</p>
-
-<h2>A summary overview of GNNs Applications</h2>
-
-<h2>Conclusion</h2>
-
-<p>Over the past few years, graph neural networks have become
-  powerful and practical tools for any problem that can be modeled by graphs.</p>
-
-<p>In this article, we did a comprehensive overview of graph neural networks and introduced a wide range of GNN applications.</p>
-
-<p>If you stayed with me until the end &#8211; thank you for reading!</p>
+--->
 
 <h3>Resources</h3>
 
