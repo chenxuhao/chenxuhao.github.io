@@ -1,0 +1,211 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Graph AI</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+<style>
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+div#content {
+	padding:			50px;
+	margin-left:		auto;
+	margin-right:		auto;
+	width:	    		800px;
+	min-height:			420px;
+	background-color:	#ffffff;
+	position:			relative;
+}
+h1 {
+	color:			#80bd01;
+	font-family: 'Lato', sans-serif;
+}
+h2 {
+	color:			#80bd01;
+	font-family: 'Lato', sans-serif;
+}
+h3 {
+	color:			#80bd01;
+	font-family: 'Lato', sans-serif;
+	margin-left:  20px;
+}
+h4 {
+	margin-left:  20px;
+}
+a {
+	text-decoration: none;
+	color: #000;
+	border-bottom: 1px solid #d4d4d4;
+}
+a:hover {
+	color: 			#fb6300;
+}
+table {
+	margin: 20px;
+	margin-left: 40px;
+	border:#ccc 1px solid;
+}
+table tr {
+	text-align: center;
+	padding-left:20px;
+}
+table td {
+	padding: 8px 24px;
+	border: 1px solid #e0e0e0;
+}
+p {
+	margin-left: 40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="content">
+
+<h1 style="text-align:center"> Student Opportunities </h1>
+
+<center>
+<h4>
+Contact: <a href="https://chenxuhao.github.io/">Xuhao Chen</a> <br/>
+</h4>
+</center>
+
+  <p>Recent success of deep learning has boosted research in almost every aspect of computer science.
+    Machine learning tasks, like object detection, machine translation, and speech recognition,
+    have been given new life with end-to-end deep learning paradigms like CNN, RNN, transformer, etc.</p>
+  <p>Deep Learning is good at capturing hidden patterns of <strong>Euclidean</strong> data (images, text, videos).
+    But what about applications where data is generated from <strong>non-Euclidean</strong> domains,
+    represented as graphs with <strong>complex relationships</strong> and <strong>interdependencies</strong> between objects?</p>
+  <p>That’s where <a href= "https://aimagazine.com/machine-learning/what-graph-ai">Graph AI</a>
+    or <a href= "https://arxiv.org/pdf/2105.00696.pdf">Graph ML</a> come in,
+    which our research projects are targeting.</p>
+
+<h2> Graph AI System [<a href="https://elx.mit.edu/experience/c67c0e7e-34ef-4de9-a95f-05e92e5c88d3">Link</a>]</h2>
+
+  <p>
+    Handling the complexity of graph data and graph algorithms requires innovations in every layer of the computer system, including both software and hardware.
+  </p>
+  <p>
+    In this project we will design and build efficient graph AI systems to enable and democratize graph AI, 
+    just like what computer scientists have done in the past 10 years for deep learning. 
+    In particular, we will build a software training framework for graph neural networks (GNN) using multiple GPUs, 
+    and then a hardware acceleration framework that further improves GNN training efficiency. </p>
+  <p>
+    Qualifications:
+    <ul>
+      <li>Strong programming skills in Python and C/C++ language</li>
+      <li>Background and prior experience with design and analysis of algorithms (e.g., 6.046)</li>
+      <li>Understanding of operating systems (linux) and computer architecture (e.g., 6.004)</li>
+      <li>GPU/CUDA programming is a plus</li>
+      <li>Some familiarity with deep learning frameworks such as PyTorch</li>
+    </ul>
+  </p>
+  
+  <p>
+    This project has the potential to become an MEng thesis. Please send your CV to cxh@mit.edu 
+    if you are interested. In the email please also specify when you want to start.
+  </p>
+  
+  <p>
+    Please specify in the email if you look for direct funding, course credit or volunteering.
+  </p>
+  
+
+<h2> Graph AI for Financial Security  [<a href="https://elx.mit.edu/experience/e773c545-183f-4d4a-8c2b-06c56efb9e0f">Link</a>] </h2>
+  <p>
+    The advent of cryptocurrency introduced by Bitcoin ignited an explosion of technological 
+    and entrepreneurial interest in payment processing. 
+    Dampening this excitement was Bitcoin’s bad reputation. 
+    Many criminals used Bitcoin’s pseudonymity to hide in plain sight, 
+    conducting ransomware attacks and operating dark marketplaces for the exchange of illegal goods and services. 
+  </p>
+  <p>
+    This project offers a golden opportunity to apply machine learning for financial forensics. 
+    The data of Bitcoin transactions naturally forms a financial transaction graph, in which we can apply graph machine learning and graph pattern mining techniques to automatically detect illegal activities. 
+    We will explore the identification and clustering of frequent subgraphs to uncover money laundering patterns, and conduct link predictions on the wallets (nodes) to unveil the malicious actor behind the scene. 
+  </p>
+<p>
+  Qualifications:
+
+  <ul>
+    <li>Strong programming skills in Python and C/C++ language</li>
+    <li>Background and prior experience with design and analysis of algorithms (e.g., 6.046)</li>
+    <li>Some familiarity with deep learning frameworks such as PyTorch</li>
+  </ul>
+</p>
+  
+<p>
+  This project has the potential to become an MEng thesis.
+  <strong>We have 6-A program opportunities available.</strong>  
+  Please send your CV to cxh@mit.edu if you are interested. 
+  In the email please also specify when you want to start.
+</p>
+<p>
+  Please specify in the email if you look for direct funding, course credit or volunteering.
+</p>
+
+<h2> Scalable Graph Transformer </h2>
+
+<p>
+  Transformer [1], the engine behind ChatGPT, 
+  has yielded competitive results in many domains such as natural language processing (NLP) [2] 
+  and computer vision (CV) [3] due to its unique attention mechanism 
+  where each element in the input data pays attention to every other element. 
+</p>
+
+<p>
+  Recently Graph Transformer [4,5,6] has been proposed 
+  by introducing the attention mechanism into graph machine learning. 
+  As opposed to graph neural networks (GNNs) and graph convolutional networks (GCNs) 
+  where nodes use neighborhood aggregation (a.k.a. message passing) mechanisms 
+  to perform inference on graph data, graph transformers use the self-attention mechanism 
+  that can capture long-range interactions between nodes. 
+  However, current graph transformers do not scale to large graphs 
+  because of the expensive computation and memory consumption. 
+  Thus, this project aims to design a graph transformer with hierarchical multi-head attention (MHA) 
+  to improve node classification for graphs on the order of 100k-100M nodes.
+</p>
+
+<p>
+  Qualifications:
+  <ul>
+  <li>Strong programming skills in Python and C/C++ language </li>
+  <li>Background and prior experience with design and analysis of algorithms (e.g., 6.046)</li>
+  <li>Some familiarity with deep learning frameworks such as PyTorch</li>
+  </ul>
+</p>
+
+<p>
+  This project has the potential to become an MEng thesis. 
+  <strong>We have 6-A program opportunities available.</strong> 
+  Please send your CV to cxh@mit.edu if you are interested. 
+  In the email please also specify when you want to start.
+</p>
+
+<p>
+  Please specify in the email if you look for direct funding, course credit or volunteering.
+</p>
+
+<h2>Resources and References</h2>
+<li> <a href= "https://aimagazine.com/machine-learning/what-graph-ai">Graph AI</a> and 
+<a href= "https://arxiv.org/pdf/2105.00696.pdf">Graph ML</a> </li>
+<li>[1] Ashish Vaswani et al. “Attention Is All You Need”. In: CoRR abs/1706.03762 (2017). arXiv: 1706.03762. url: http://arxiv.org/abs/1706.03762.
+</li>
+<li>[2] Jacob Devlin et al. “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding”. In: CoRR abs/1810.04805 (2018). arXiv: 1810.04805. url: http://arxiv.org/abs/1810.04805.
+</li>
+<li>[3] Alexey Dosovitskiy et al. “An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale”. In: CoRR abs/2010.11929 (2020). arXiv: 2010.11929. url: https://arxiv.org/abs/2010.11929.
+</li>
+<li>[4] Graphormer https://openreview.net/forum?id=OeWooOxFwDa
+</li>
+<li>[5] GraphGPS https://arxiv.org/pdf/2205.12454.pdf https://github.com/rampasek/GraphGPS
+</li>
+<li>[6] Spectral attention network https://arxiv.org/abs/2106.03893
+</li>
+
+</div>
+
+</body>
+</html>
