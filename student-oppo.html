@@ -65,67 +65,123 @@ p {
 
 <div id="content">
 
-<h1 style="text-align:center"> Student Opportunities </h1>
+<h1 style="text-align:center"> Student Research Opportunities </h1>
 
 <center>
 <h4>
 Contact: <a href="https://chenxuhao.github.io/">Xuhao Chen</a> <br/>
+
+<p>We are looking for undergraduate students to join our research projects.
+  If you are interested in working in machine learning, computer systems and architectures, feel free to reach out. </p>
 </h4>
 </center>
 
-  <p>Recent success of deep learning has boosted research in almost every aspect of computer science.
-    Machine learning tasks, like object detection, machine translation, and speech recognition,
-    have been given new life with end-to-end deep learning paradigms like CNN, RNN, transformer, etc.</p>
-  <p>Deep Learning is good at capturing hidden patterns of <strong>Euclidean</strong> data (images, text, videos).
-    But what about applications where data is generated from <strong>non-Euclidean</strong> domains,
-    represented as graphs with <strong>complex relationships</strong> and <strong>interdependencies</strong> between objects?</p>
-  <p>That’s where <a href= "https://aimagazine.com/machine-learning/what-graph-ai">Graph AI</a>
-    or <a href= "https://arxiv.org/pdf/2105.00696.pdf">Graph ML</a> come in,
-    which our research projects are targeting.</p>
+
+<p>
+  The AI revolution is transforming various industries and having a significant impact on society.
+  However, AI is computationally expensive and hard to scale, which poses a great challenge in computer system design.
+  Our lab is broadly interested in computer systems, architectures, high performance computing for AI and machine learning.
+</p>
+
+<p>
+  We look at system conferences <a href="https://www.usenix.org/conferences">[OSDI, SOSP]</a>,
+<a href="https://www.asplos-conference.org/">[ASPLOS]</a>,
+<a href="https://iscaconf.org/">[ISCA]</a>,
+<a href="https://www.vldb.org/">[VLDB]</a>,
+<a href="https://sigmod.org/">[SIGMOD]</a>
+<a href="https://supercomputing.org/">[SC]</a>,
+<a href="https://conf.researchr.org/home/ppopp-2024">[PPoPP]</a>.
+</p>
+
+
+<p>
+  <strong>Interesting MLSys topics</strong>: Transformer (Attention), Mixture-of-Experts, Vector Similarity Search, Deep Recommendation Models, Graph Machine Learning,
+ Graph Sampling, Graph Algorithms, Robotics, Large Language Models, GPU Acceleration, Model Serving,
+ Graph Databases, Graph Transformer, Diffusion, Generative AI, Reinforcement Learning.
+ Below are some ongoing research projects.
+</p>
+
+
+<h2> Scalable Vector Database [<a href="">Link</a>]</h2>
+
+  <p>
+    Recent advances in deep learning models map almost all types of data (e.g., images, videos, documents) into high-dimension vectors.
+    Queries on high-dimensional vectors enable complex semantic-analysis that was previously difficult if not impossible,
+    thus they become the cornerstone for many important online services like search, eCommerce, and recommendation systems.
+  </p>
+  <p>
+    In this project we aim to build a massive-scale <strong>Vector Database</strong> on the multi-CPU and multi-GPU platform.
+    In a Vector Database, the major operation is to search the k closest vectors to a given query vector, known as
+    many Approximate Nearest-Neighbor (ANN) Search approaches have been developed. One of the most
+    promising approaches is the graph-based approach, which first constructs a proximity graph on the dataset,
+    connecting pairs of vectors that are close to each other, then performs a graph traversal on the proximity
+    graph for each query to find the closest vectors to a query vector. In this project we will build a vector
+    database using graph-based ANN search algorithm that supports billion-scale datasets.
+  </p>
+
+  <p>
+    Qualifications:
+    <ul>
+      <li>Strong programming skills in C/C++/Python language</li>
+      <li>Experience with design and analysis of algorithms, e.g., <a href="https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/">MIT 6.1220 (previously 6.046)</a></li>
+      <li>Experience with performance engineering is a plus, e.g., <a href="https://ocw.mit.edu/courses/6-172-performance-engineering-of-software-systems-fall-2018/">MIT 6.1060 (previously 6.172)</a></li>
+      <li><a href="http://gputeachingkit.hwu.crhc.illinois.edu/">GPU/CUDA programming</a> is a plus</li>
+    </ul>
+  </p>
+
+  <p>
+    This project has the potential to become an MEng thesis. Please send your CV to <a href="mailto:cxh@mit.edu">cxh@mit.edu</a> if you are interested.
+    In the email please also specify when you want to start, and if you look for direct funding, course credit or volunteering.
+  </p>
 
 <h2> Graph AI System [<a href="https://elx.mit.edu/experience/c67c0e7e-34ef-4de9-a95f-05e92e5c88d3">Link</a>]</h2>
 
   <p>
-    Handling the complexity of graph data and graph algorithms requires innovations in every layer of the computer system, including both software and hardware.
+      Deep Learning is good at capturing hidden patterns of <strong>Euclidean</strong> data (images, text, videos).
+      But what about applications where data is generated from <strong>non-Euclidean</strong> domains,
+      represented as graphs with complex relationships and interdependencies between objects?
+      That’s where <a href= "https://aimagazine.com/machine-learning/what-graph-ai">Graph AI</a>
+      or <a href= "https://arxiv.org/pdf/2105.00696.pdf">Graph ML</a> come in.
+      Handling the complexity of graph data and graph algorithms requires innovations in every layer of the computer system, including both software and hardware.
   </p>
   <p>
-    In this project we will design and build efficient graph AI systems to enable and democratize graph AI, 
-    just like what computer scientists have done in the past 10 years for deep learning. 
-    In particular, we will build a software training framework for graph neural networks (GNN) using multiple GPUs, 
-    and then a hardware acceleration framework that further improves GNN training efficiency. </p>
+    In this project we will design and build efficient graph AI systems to support scalable graph AI computing.
+    In particular, we will build software frameworks for Graph AI and ML, e.g., graph neural networks (GNN), graph pattern mining (GPM) and graph sampling,
+    and hardware accelerators that further enhance system efficiency and scalability. </p>
   <p>
     Qualifications:
     <ul>
-      <li>Strong programming skills in Python and C/C++ language</li>
-      <li>Background and prior experience with design and analysis of algorithms (e.g., 6.046)</li>
-      <li>Understanding of operating systems (linux) and computer architecture (e.g., 6.004)</li>
-      <li>GPU/CUDA programming is a plus</li>
-      <li>Some familiarity with deep learning frameworks such as PyTorch</li>
+      <li>Strong programming skills in C/C++/Python language</li>
+      <li>Experience with design and analysis of algorithms, e.g., <a href="https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/">MIT 6.1220 (previously 6.046)</a></li>
+      <li>Basic understanding of computer architecture, e.g., <a href="https://6191.mit.edu/">MIT 6.1910 (previously 6.004)</a></li>
+      <li>Experience with performance engineering is a plus, e.g., <a href="https://ocw.mit.edu/courses/6-172-performance-engineering-of-software-systems-fall-2018/">MIT 6.1060 (previously 6.172)</a></li>
+      <li><a href="http://gputeachingkit.hwu.crhc.illinois.edu/">GPU/CUDA programming</a> is a plus</li>
+      <li>Familiarity with deep learning frameworks is a plus, e.g., PyTorch</li>
     </ul>
   </p>
-  
+
   <p>
-    This project has the potential to become an MEng thesis. Please send your CV to cxh@mit.edu 
+    This project has the potential to become an MEng thesis. Please send your CV to cxh@mit.edu
     if you are interested. In the email please also specify when you want to start.
   </p>
-  
+
   <p>
     Please specify in the email if you look for direct funding, course credit or volunteering.
   </p>
-  
+
 
 <h2> Graph AI for Financial Security  [<a href="https://elx.mit.edu/experience/e773c545-183f-4d4a-8c2b-06c56efb9e0f">Link</a>] </h2>
   <p>
-    The advent of cryptocurrency introduced by Bitcoin ignited an explosion of technological 
-    and entrepreneurial interest in payment processing. 
-    Dampening this excitement was Bitcoin’s bad reputation. 
-    Many criminals used Bitcoin’s pseudonymity to hide in plain sight, 
-    conducting ransomware attacks and operating dark marketplaces for the exchange of illegal goods and services. 
+    The advent of cryptocurrency introduced by Bitcoin ignited an explosion of technological
+    and entrepreneurial interest in payment processing.
+    Dampening this excitement was Bitcoin’s bad reputation.
+    Many criminals used Bitcoin’s pseudonymity to hide in plain sight,
+    conducting ransomware attacks and operating dark marketplaces for the exchange of illegal goods and services.
   </p>
   <p>
-    This project offers a golden opportunity to apply machine learning for financial forensics. 
-    The data of Bitcoin transactions naturally forms a financial transaction graph, in which we can apply graph machine learning and graph pattern mining techniques to automatically detect illegal activities. 
-    We will explore the identification and clustering of frequent subgraphs to uncover money laundering patterns, and conduct link predictions on the wallets (nodes) to unveil the malicious actor behind the scene. 
+    This project offers a golden opportunity to apply machine learning for financial forensics.
+    The data of Bitcoin transactions naturally forms a financial transaction graph, in which we can apply graph machine learning and graph pattern mining techniques to automatically detect illegal activities.
+    We will explore the identification and clustering of frequent subgraphs to uncover money laundering patterns, and conduct link predictions on the wallets (nodes) to unveil the malicious actor behind the scene.
   </p>
 <p>
   Qualifications:
@@ -136,11 +192,11 @@ Contact: <a href="https://chenxuhao.github.io/">Xuhao Chen</a> <br/>
     <li>Some familiarity with deep learning frameworks such as PyTorch</li>
   </ul>
 </p>
-  
+
 <p>
   This project has the potential to become an MEng thesis.
-  <strong>We have 6-A program opportunities available.</strong>  
-  Please send your CV to cxh@mit.edu if you are interested. 
+  <strong>We have 6-A program opportunities available.</strong>
+  Please send your CV to cxh@mit.edu if you are interested.
   In the email please also specify when you want to start.
 </p>
 <p>
@@ -150,22 +206,22 @@ Contact: <a href="https://chenxuhao.github.io/">Xuhao Chen</a> <br/>
 <h2> Scalable Graph Transformer  [<a href="https://elx.mit.edu/experience/5168d52b-590a-4c2a-abf6-9542e79438c7">Link</a>] </h2>
 
 <p>
-  Transformer [1], the engine behind ChatGPT, 
-  has yielded competitive results in many domains such as natural language processing (NLP) [2] 
-  and computer vision (CV) [3] due to its unique attention mechanism 
-  where each element in the input data pays attention to every other element. 
+  Transformer [1], the engine behind ChatGPT,
+  has yielded competitive results in many domains such as natural language processing (NLP) [2]
+  and computer vision (CV) [3] due to its unique attention mechanism
+  where each element in the input data pays attention to every other element.
 </p>
 
 <p>
-  Recently Graph Transformer [4,5,6] has been proposed 
-  by introducing the attention mechanism into graph machine learning. 
-  As opposed to graph neural networks (GNNs) and graph convolutional networks (GCNs) 
-  where nodes use neighborhood aggregation (a.k.a. message passing) mechanisms 
-  to perform inference on graph data, graph transformers use the self-attention mechanism 
-  that can capture long-range interactions between nodes. 
-  However, current graph transformers do not scale to large graphs 
-  because of the expensive computation and memory consumption. 
-  Thus, this project aims to design a graph transformer with hierarchical multi-head attention (MHA) 
+  Recently Graph Transformer [4,5,6] has been proposed
+  by introducing the attention mechanism into graph machine learning.
+  As opposed to graph neural networks (GNNs) and graph convolutional networks (GCNs)
+  where nodes use neighborhood aggregation (a.k.a. message passing) mechanisms
+  to perform inference on graph data, graph transformers use the self-attention mechanism
+  that can capture long-range interactions between nodes.
+  However, current graph transformers do not scale to large graphs
+  because of the expensive computation and memory consumption.
+  Thus, this project aims to design a graph transformer with hierarchical multi-head attention (MHA)
   to improve node classification for graphs on the order of 100k-100M nodes.
 </p>
 
@@ -179,9 +235,9 @@ Contact: <a href="https://chenxuhao.github.io/">Xuhao Chen</a> <br/>
 </p>
 
 <p>
-  This project has the potential to become an MEng thesis. 
-  <strong>We have 6-A program opportunities available.</strong> 
-  Please send your CV to cxh@mit.edu if you are interested. 
+  This project has the potential to become an MEng thesis.
+  <strong>We have 6-A program opportunities available.</strong>
+  Please send your CV to cxh@mit.edu if you are interested.
   In the email please also specify when you want to start.
 </p>
 
@@ -190,7 +246,7 @@ Contact: <a href="https://chenxuhao.github.io/">Xuhao Chen</a> <br/>
 </p>
 
 <h2>Resources and References</h2>
-<li> <a href= "https://aimagazine.com/machine-learning/what-graph-ai">Graph AI</a> and 
+<li> <a href= "https://aimagazine.com/machine-learning/what-graph-ai">Graph AI</a> and
 <a href= "https://arxiv.org/pdf/2105.00696.pdf">Graph ML</a> </li>
 <li>[1] Ashish Vaswani et al. “Attention Is All You Need”. In: CoRR abs/1706.03762 (2017). arXiv: 1706.03762. url: http://arxiv.org/abs/1706.03762.
 </li>
