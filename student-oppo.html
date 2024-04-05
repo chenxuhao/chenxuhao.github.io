@@ -111,9 +111,9 @@ Contact: <a href="https://chenxuhao.github.io/">Xuhao Chen</a> <br/>
   </p>
   <p>
     In this project we aim to build a massive-scale <strong>Vector Database</strong> on the multi-CPU and multi-GPU platform.
-    In a Vector Database, the major operation is to search the k closest vectors to a given query vector, known as
-    many Approximate Nearest-Neighbor (ANN) Search approaches have been developed. One of the most
-    promising approaches is the graph-based approach, which first constructs a proximity graph on the dataset,
+    In a Vector Database, the major operation is to search the k closest vectors to a given query vector,
+    known as k-Nearest-Neighbor (kNN) search. Due to massive data scale, Approximate Nearest-Neighbor (ANN) search is used in practice instead.
+    One of the most promising ANN approaches is the graph-based approach, which first constructs a proximity graph on the dataset,
     connecting pairs of vectors that are close to each other, then performs a graph traversal on the proximity
     graph for each query to find the closest vectors to a query vector. In this project we will build a vector
     database using graph-based ANN search algorithm that supports billion-scale datasets.
