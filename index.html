@@ -62,7 +62,7 @@
           <a onclick="javascript:reset_menus();$('#tab-pub-content').show();" href="#publications">Publications</a>
         </li>
 		<li class="page-scroll">
-		  <a onclick="javascript:reset_menus();$('#tab-research-content').show();" href="#research">Students</a>
+		  <a onclick="javascript:reset_menus();$('#tab-students-content').show();" href="#students">Students</a>
 		</li>
         <li class="page-scroll">
           <a onclick="javascript:reset_menus();$('#tab-teach-content').show();" href="#teach">Teaching</a>
@@ -184,7 +184,7 @@
 <button class="btn btn-default btn-lg btn-block"
         style="display: block; width: 100%;"
         onclick="javascript:$('#tab-news-content').toggle();">
-    Projects  <span class="glyphicon glyphicon-chevron-right"></span>
+    News  <span class="glyphicon glyphicon-chevron-right"></span>
 </button>
 </i>
 <div class="allshow" style="display:none;" id="tab-news-content">
@@ -398,11 +398,11 @@ In the Proceedings of 47th International Symposium on Micro Architecture (MICRO)
 <i class="noshow" style="display:none;" id="tab-4">
 <button class="btn btn-default btn-lg btn-block"
         style="display: block; width: 100%;"
-        onclick="javascript:$('#tab-research-content').toggle();">
-    Experiences  <span class="glyphicon glyphicon-chevron-right"></span>
+        onclick="javascript:$('#tab-students-content').toggle();">
+    Students  <span class="glyphicon glyphicon-chevron-right"></span>
 </button>
 </i>
-<div class="allshow" style="display:none;" id="tab-research-content">
+<div class="allshow" style="display:none;" id="tab-students-content">
 <hr class="star-primary">
 
 <h2>Students</h2>
@@ -429,15 +429,15 @@ In the Proceedings of 47th International Symposium on Micro Architecture (MICRO)
   <li>  <a href="https://www.linkedin.com/in/shreya-chaudhary-/">Shreya Chaudhary</a> </li>
   <li>  <a href="https://linkedin.com/in/siddhant-mukherjee-28b00b224/">Siddhant Mukherjee</a> </li>
   <li>  <a href="https://www.linkedin.com/in/kellyho7/">Kelly Ho</a> </li>
-  <li>  <a href="">Sanjay Seshan</a> </li>
-  <li>  <a href="">Anna Murphy</a> </li>
-  <li>  <a href="">Siyong Huang</a> </li>
-  <li>  <a href="">Lasya A. Balachandran</a> </li>
-  <li>  <a href="">Philena J. Liu</a> </li>
-  <li>  <a href="">Luc Gaitskell</a> </li>
-  <li>  <a href="">Sally Kim</a> </li>
-  <li>  <a href="">Jinyu Li</a> </li>
-  <li>  <a href="">Ruinan Lin</a> </li>
+  <li>  <a href="https://www.mit.edu/~seshan/">Sanjay Seshan</a> </li>
+  <li>  <a href="https://www.linkedin.com/in/anna8murphy/">Anna Murphy</a> </li>
+  <li>  <a href="https://www.linkedin.com/in/siyong-huang-59a264221/">Siyong Huang</a> </li>
+  <li>  <a href="https://superurop.mit.edu/scholars/lasya-akila-balachandran/">Lasya A. Balachandran</a> </li>
+  <li>  <a href="https://www.linkedin.com/in/philena-liu/">Philena J. Liu</a> </li>
+  <li>  <a href="https://www.linkedin.com/in/lucgait/">Luc Gaitskell</a> </li>
+  <li>  <a href="https://www.linkedin.com/in/soo-hyung-kim/">Sally Kim</a> </li>
+  <li>  <a href="https://www.linkedin.com/in/jinyuli03/">Jinyu (Dora) Li</a> </li>
+  <li>  <a href="https://www.linkedin.com/in/ruinan-lin-b727082b7/">Ruinan Lin</a> </li>
 </ul>
 
 <!--
@@ -540,23 +540,30 @@ Guest lecture on Pangolin [<a href="https://people.csail.mit.edu/jshun/6886-s21/
 <br /> </p>
 -->
 
-<p>
+<ul>
+  <li>
   <!--<b>Software Performance Engineering</b> <b> </b> <br />-->
-  <a href="sw-perf-engineering/">Software Performance Engineering</a> <br />
-  Topic list: parallel programming, matrix multiplication, cache tiling, Cilk, OpenMP, GPU, synchronization,
-  compiler, storage allocation, parallel algorithms, work and span, Bentley rules.
+  <p><a href="sw-perf-engineering/">Software Performance Engineering</a> </p>
+  <p>
+  Topic list: Matrix Multiplication, Bit Hacks, Bentley’s Rules, Cache Tiling, Multicore Programming,
+  Cilk, OpenMP, GPU, Synchronization, Vectorization, Cache-Oblivious Algorithms, Races and Parallelism,
+  Compiler, Storage Allocation, Parallel Algorithms, Work and Span, Speculative Parallelism.
+  </p>
   <br />
-</p>
+</li>
 
-<p>
+<li>
   <!--<b>GPU Programming</b> <b> </b> <br />-->
-  <a href="gpu-programming">GPU Programming</a> <br />
-  Topic list: GPU architecture, CUDA programming model, SIMT, CUDA memory model, tiling, scratchpad memory,
-  memory coalescing, control divergence, atomic operations, streaming, warp synchronization, dynamic parallleism, multi-GPU programming.
+  <p><a href="gpu-programming">GPU Programming</a> <br /></p>
+  <p>
+  Topic list: GPU architecture, CUDA programming model, SIMT, CUDA memory model, locality and tiling, scratchpad memory,
+  memory coalescing, control divergence, atomic operations, streaming,
+  warp synchronization, dynamic parallleism, multi-GPU programming.
   <!--matrix multiplication, convolution, stencil, histogram, reduction tree, prefix sum, merging, sorting, sparse matrix representations and processing, graph traversal,-->
+  </p>
 <br />
-</p>
-
+</li>
+</ul>
 <!--
 <p>
   <a href="computer-organization">Computer Organization</a> <br />
@@ -653,30 +660,27 @@ First rank, Scholarship of Excellent Achievements, NUDT (top 3%) 2007
 
 <h2>Academic Service </h2>
 
-<p>Invited reviewer for
-<i>ACM Symposium on Parallelism in Algorithms and Architectures (SPAA)</i>
-<br />
-</p>
+<ul>
+  <li> Invited reviewer for
+    <i>ACM Symposium on Parallelism in Algorithms and Architectures (SPAA)</i>
+  </li>
 
-<p>Invited reviewer for
-<i>The VLDB Journal</i>
-<br />
-</p>
+  <li>Invited reviewer for
+    <i>The VLDB Journal</i>
+  </li>
 
-<p>Invited reviewer for
-<i>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)</i>
-<br />
-</p>
+  <li>Invited reviewer for
+    <i>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)</i>
+  </li>
 
-<p>Invited reviewer for
-<i>IEEE Transactions on Knowledge and Data Engineering (TKDE)</i>
-<br />
-</p>
+  <li>Invited reviewer for
+    <i>IEEE Transactions on Knowledge and Data Engineering (TKDE)</i>
+  </li>
 
-<p>Invited reviewer for
-<i>ACM Transactions on Architecture and Code Optimization (TACO)</i>
-<br /> </p>
-
+  <li>Invited reviewer for
+    <i>ACM Transactions on Architecture and Code Optimization (TACO)</i>
+  </li>
+</ul>
 <!--
 <p>Invited reviewer for
 <i>ACM Transactions on Modeling and Performance Evaluation of Computing Systems</i>
@@ -742,6 +746,8 @@ Contact<span class="glyphicon glyphicon-chevron-right"></span>
 
 <h2>Links</h2>
 <p>
+  <a href="https://www.youtube.com/watch?v=Unzc731iCUY">How to speak</a> <br />
+  <a href="https://www.youtube.com/watch?v=EoDrmqZ6hSE">The Zen of Research - Tips for New Researchers</a> <br />
   <a href="https://scholar.google.com/citations?user=GcdGTBAAAAAJ&hl=en">Google Scholar Profile</a> <br />
   <a href="https://www.linkedin.com/in/xuhao-chen-b7296a43">LinkedIn Profile</a> <br />
   <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Xuhao">DBLP Entry</a> <br />
