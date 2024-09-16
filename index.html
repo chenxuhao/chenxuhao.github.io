@@ -1,308 +1,120 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8"/>
-    <title>[Xuhao Chen @ MIT]</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/menucollapse.js"></script>
-    <script type="text/javascript" src="js/arrow78.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
-    <!--script type="text/javascript" src="js/include.js"></script-->
-  </head>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[Xuhao Chen @ MIT]</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main1.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/site.css">
+</head>
 
-  <body id="page-top" class="index">
-    <!--div w3-include-html="navigation.html"></div>
-    <section>
-      <gcse:searchresults-only></gcse:searchresults-only>
-    </section>
-    <div w3-include-html="home.html"></div>
-    <div w3-include-html="intro.html"></div>
-    <div w3-include-html="pubs.html"></div>
-    <div w3-include-html="research.html"></div>
-    <div w3-include-html="teach.html"></div>
-    <div w3-include-html="awards.html"></div>
-    <div w3-include-html="service.html"></div>
-    <div w3-include-html="grants.html"></div>
-    <div w3-include-html="contact.html"></div>
-    <script>includeHTML();</script-->
+<body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="glyphicon glyphicon-search"></span>
-      </button>
-      <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <span><a href="#"><img border="0" width="170" src="images/mit_logo.png"/></a></span>
+<div role="main">
+
+  <div id="self">
+    <h1>Xuhao Chen</h1>
+    <a href="IMG_1964.jpg"><img src="images/cxh.png"/></a>
+    <div id="info">
+    <div><h3>Research Scientist</h3></div>
+    <div><a href="https://csail.mit.edu">Computer Science &amp; Artificial Intelligence Lab</a></div>
+    <div><a href="https://eecs.mit.edu">Department of Electrical Engineering &amp; Computer Science</a></div>
+    <div><a href="https://www.mit.edu">Massachusetts Institute of Technology</a></div>
+    <div><a href="mailto:cxh@mit.edu">cxh@mit.edu</a></div>
+    <div>+1-512-988-7388</div>
+    <div>32-G766, 32 Vassar St, Cambridge, MA 02139</div>
+    <!--<div>  <a href="https://github.com/chenxuhao">GitHub  </a> </div> -->
+    <div>   <a href="https://scholar.google.com/citations?user=GcdGTBAAAAAJ&hl=en">Google Scholar  </a> </div>
+    <div> <a href="https://bass-research-group.github.io/">BASS Group  </a> </div>
     </div>
+  </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="page-scroll">
-          <a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Home</a>
-        </li>
-        <li class="page-scroll">
-          <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
-        </li>
-        <li class="page-scroll">
-          <a onclick="javascript:reset_menus();$('#tab-pub-content').show();" href="#publications">Publications</a>
-        </li>
-		<li class="page-scroll">
-		  <a onclick="javascript:reset_menus();$('#tab-students-content').show();" href="#students">Students</a>
-		</li>
-        <li class="page-scroll">
-          <a onclick="javascript:reset_menus();$('#tab-teach-content').show();" href="#teach">Teaching</a>
-		</li>
-    <!--
-        <li class="page-scroll">
-          <a onclick="javascript:reset_menus();$('#tab-awards-content').show();" href="#awards">Awards</a>
-        </li>
-      -->
-        <li class="page-scroll">
-          <a onclick="javascript:reset_menus();$('#tab-service-content').show();" href="#service">Service</a>
-        </li>
-        <!--li class="page-scroll">
-          <a onclick="javascript:reset_menus();$('#tab-grants-content').show();" href="#grants">Grants</a>
-        </li-->
-        <li class="page-scroll">
-          <a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-    <!-- search box submenu -->
-    <div class="collapse" id="bs-example-navbar-collapse-2">
-        <gcse:search></gcse:search>
-    </div>
-  </div><!-- /.container-fluid -->
-</nav>
-
-    <section>
-      <gcse:searchresults-only></gcse:searchresults-only>
-    </section>
-
-<!-- Home Section -->
-<section id="home" style="margin-top:40px">
-<div class="container">
-<div align="left" class="col-md-3">
-  <img id="mobile-img" src="images/cxh.png"border="0" height="200" alt="">
-</div>
-<div align="left" class="col-md-4">
-  <h3>Xuhao Chen
-  <h4>Research Scientist<br>
-  <!--<a href="https://www.csail.mit.edu/">Computer Science & Artificial Intelligence Laboratory (CSAIL)</a><br>
-  <a href="https://www.mit.edu/">Massachusetts Institute of Technology</a><br>
-  -->
-  MIT CSAIL<br>
-  32-G766, Stata Center<br>
-  32 Vassar St, Cambridge, MA 02139<br>
-  <img src="images/email_icon.jpg"/ ALIGN=TOP> cxh at mit.edu
-  </h4>
-</div>
-<b class="expandshow" style="display:none;" id="tab-1">
-  <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
-</b>
-<b class="collapseshow" style="display:none;" id="tab-1">
-  <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
-</b>
-</div>
-</section>
-
-<!-- Introduction Section -->
-<section id="intro">
-<div class="container lead">
-<div style="text-align: left; margin-top:10px" class="col-md-12">
-<!--<h2>Welcome!</h2>-->
-<i class="noshow" style="display:none;" id="tab-1">
-<button class="btn btn-default btn-lg btn-block"
-        style="display: block; width: 100%;"
-        onclick="javascript:$('#tab-intro-content').toggle();">
-    Introduction <span class="glyphicon glyphicon-chevron-right"></span>
-</button>
-</i>
-<div class="allshow" style="display:none;" id="tab-intro-content">
-<hr class="star-primary">
-  <p class="lead">
+<div id="bio">
+<h2>Bio</h2>
+  <p>
       I am a Research Scientist <!-- in the <a href="http://csg.csail.mit.edu/">Computation Structures Group</a> -->
       at <a href="http://www.csail.mit.edu/">MIT CSAIL</a>,
       working with <a href="https://people.csail.mit.edu/cel/">Prof. Charles E. Leiserson</a> and <a href="http://csg.csail.mit.edu/Users/arvind">Prof. Arvind</a>.
-      I work on high performance computer systems, particularly for AI & machine learning, security & privacy, science and finance.
-      <!-- My research aims to democratize <a href= "graphAI.html">Graph AI</a> (e.g., <a href= "https://arxiv.org/pdf/2105.00696.pdf">Graph ML</a>,
-       <a href= "https://research.google/teams/graph-mining/">Graph Mining</a>)
-      by designing algorithms and building software & hardware systems.-->
-      <!-- I received my Ph.D. in Computer Science from <a href="http://www.nudt.edu.cn/index_eng.htm">National University of Defense Technology (NUDT)</a> in 2014. -->
-      Before joining MIT, I was a research fellow
-      <!-- (from Jan. 2019 to Aug. 2020) working with Prof. <a href="http://www.cs.utexas.edu/~pingali/">Keshav Pingali</a>-->
-      in the <a href="https://iss.oden.utexas.edu/">Intelligent Software Systems group</a>
+      I work on high performance computer systems, targeting computation in AI & machine learning, security & privacy, science and finance.
+      Before joining MIT, I was a research fellow in the <a href="https://iss.oden.utexas.edu/">Intelligent Software Systems group</a>
       at <a href="https://www.utexas.edu/">University of Texas at Austin</a>,
-      and a visiting Ph.D. student
-      <!-- (from Nov. 2012 to Nov. 2014) working with Prof. <a href="http://impact.crhc.illinois.edu/People/Hwu/hwu.aspx">Wen-Mei Hwu</a>-->
-      in the <a href="http://impact.crhc.illinois.edu/">IMPACT Research group</a>
+      and a visiting PhD student in the <a href="http://impact.crhc.illinois.edu/">IMPACT Research group</a>
       at <a href="http://www.illinois.edu/">University of Illinois Urbana-Champaign</a>.
   </p>
 
-  <p class="lead">We are looking for grad and undergrad students to work on our <a href="student-oppo.html">research projects</a>.
+  <p class="lead"><a href="https://bass-research-group.github.io/">Our group</a> are looking for grad and undergrad students to work on our <a href="student-oppo.html">research projects</a>.
     If you are interested in joining our lab, please fill in the
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAwaRSct0V3gnxntv2CXUK8fum5PHSF3_ZZQlM1pgUO2MwfQ/viewform">recruiting form</a>.
-    <!--I do not reply inquiry emails if the recruiting form is incomplete.-->
-    <!--These projects have the potential to become an MEng thesis, and we have 6-A program opportunities available.-->
-    <!--If you contribute sufficiently, you can get a chance to be primary author in the paper. -->
-    </p>
+  </p>
 
-  <!-- <p> <strong>I am on the academic job market. Please reach out to me if you are hiring!</strong> </p> -->
-  <!-- <h3 class="mb-0"> <font color="C45239"><b>I am on the academic job market. Please reach out to me if you are hiring!</b></font><br> </h3> -->
-  <!-- <a href="bio.html" class="btn-sm btn-primary">Short Biography &raquo;</a> -->
-  <!-- <a href="cv.html" class="btn-sm btn-primary">CV (html)&raquo;</a> -->
-  <a href="https://scholar.google.com/citations?user=GcdGTBAAAAAJ&hl=en" class="btn-sm btn-primary">Google Scholar&raquo;</a>
-  <!-- <a href="CV_Xuhao_Chen.pdf" class="btn-sm btn-primary">CV (PDF)&raquo;</a> -->
-  <a href="https://github.com/chenxuhao" class="btn-sm btn-primary">GitHub&raquo;</a>
-  <a href="https://github.com/chenxuhao/GraphMiner" class="btn-sm btn-primary">Graph Mining Benchmarks&raquo;</a>
-  <a href="https://bass-research-group.github.io/" class="btn-sm btn-primary">BASS Group&raquo;</a>
-  <!--<a href="https://github.com/chenxuhao/ReadingList" class="btn-sm btn-primary">Reading List for Graph Computing&raquo;</a>
-  <a href="https://github.com/chenxuhao/GraphAIBench" class="btn-sm btn-primary">Graph Neural Network Benchmarks&raquo;</a>
-  <a href="https://github.com/chenxuhao/gardenia" class="btn-sm btn-primary">GARDENIA Benchmark Suite&raquo;</a>
-  -->
-</div>
-</div>
-</div>
-</section>
 
-<!-- News Section -->
-<section id="news">
-<div class="container lead">
-<div style="text-align: left; margin-top:10px" class="col-md-12">
-<i class="noshow" style="display:none;" id="tab-2">
-<button class="btn btn-default btn-lg btn-block"
-        style="display: block; width: 100%;"
-        onclick="javascript:$('#tab-news-content').toggle();">
-    News  <span class="glyphicon glyphicon-chevron-right"></span>
-</button>
-</i>
-<div class="allshow" style="display:none;" id="tab-news-content">
-<hr class="star-primary">
 
-<!-- Publications Section -->
-<!-- <font color="green"><strong> [UPCOMING] </strong></font> -->
 <h2>News</h2>
+  <p> The <a href="https://arxiv.org/pdf/2405.03488">ScaleMiner</a> paper gets accepted at <strong>VLDB 2025</strong>! </p>
 
 <p>
-<strong>Four MEng students have successfully graduated!</strong>
+  <strong>Four MEng students</strong> have successfully graduated!
   Congratulations to <a href="https://annaad.github.io/">Anna Arpaci-Dusseau</a>,
   <a href="https://www.linkedin.com/in/miranda-cai-5b3a70222/">Miranda Cai</a>,
   <a href="https://www.egmo.org/people/person1510/">Yuting (Emma) Qin</a>,
   and <a href="https://www.linkedin.com/in/muhua-xu-2b7038147/?locale=en_US">Muhua (Cici) Xu</a>.
-<br /> </p>
+  <br />
+</p>
 
+<h2 id="current-advisees">Current Advisees</h2>
+<ul>
+  <li>  <a href="https://stats.ioinformatics.org/people/6469">Zixiang (Peter) Zhou</a></li>
+  <li>  <a href="https://linkedin.com/in/chengyuan-ma-894314237/">Chengyuan Ma</a> </li>
+  <li>  <a href="https://www.linkedin.com/in/wenqi-ding-602aa5190/">Wenqi Ding</a> </li>
+  <li>  <a href="https://www.linkedin.com/in/lucgait/">Luc Gaitskell</a> </li>
+  <li>  <a href="https://www.linkedin.com/in/rachael-cai-1048a7267/">Rachael Cai</a> </li>
+</ul>
+<h3 id="former-students--postdocs">Former Students &amp; Postdocs</h3>
+<ul>
+  <li>  <a href="https://annaad.github.io/">Anna Arpaci-Dusseau</a> (MEng'24 &rarr; Lecturer at Boston University) </li>
+  <li>  <a href="https://www.linkedin.com/in/miranda-cai-5b3a70222/">Miranda Cai</a> (MEng'24 &rarr; Capital One) </li>
+  <li>  <a href="https://www.egmo.org/people/person1510/">Yuting (Emma) Qin</a> (MEng'24 &rarr; ) </li>
+  <li>  <a href="https://www.linkedin.com/in/muhua-xu-2b7038147/?locale=en_US">Muhua (Cici) Xu</a> (MEng'24 &rarr; Hudson River Trading) </li>
+  <li>  <a href="https://www.linkedin.com/in/kellyho7/">Kelly Ho</a> (MEng'23 &rarr; Two Sigma)</li>
+</ul>
 <!--
-<p>
-<strong>April 18, 2022</strong> Invited talk at Texas State
-<br /> </p>
-
-<p>
-<strong>April 13, 2022</strong> Invited talk at University of Edinburgh
-<br /> </p>
-
-<p>
-<strong>March 29, 2022</strong> Invited talk at University of Virginia
-<br /> </p>
-
-<p>
-<strong>March 11, 2022</strong> Invited talk at George Mason
-<br /> </p>
-
-<p>
-<strong>March 1, 2022</strong> Invited talk at Clemson
-<br /> </p>
-
-<p>
-<strong>February 23, 2022</strong> Invited talk at University of Rochester
-<br /> </p>
-
-<p>
-<strong>February 17, 2022</strong> Invited talk at University of Florida
-<br /> </p>
-
-<p>
-<strong>February 4, 2022</strong> Invited talk at Rochester Institute of Technology
-<br /> </p>
-
-<p>
-<strong>January 24, 2022</strong> Invited talk at Iowa State
-<br /> </p>
-
-<p>
-<strong>January 18, 2022</strong> Invited talk at Illinois Institute of Technology
-<br /> </p>
-
-<p>
-<strong>November 5, 2021</strong> Invited talk at the CS Seminar in UMass Amherst
-<br /> </p>
-
-<p>
-<strong>October 29, 2021</strong> Invited talk at the <a href="https://midas.bu.edu/">MiDAS</a> Seminar in Boston University
-<br /> </p>
-
-<p>
-<strong>October 22, 2021</strong> Invited talk at the <a href="https://www.brandeis.edu/computer-science/events/index.html">COSI</a> Seminar Brandeis University
-<br /> </p>
-
-<p>
-<strong>April 28, 2021</strong> Invited talk at MIT <a href="http://fast-code.csail.mit.edu/">fast-code seminar</a>
-<br /> </p>
-
-<p>
-<strong>April 7, 2021</strong> Invited talk at University of Connecticut
-<br /> </p>
+<h3>UROP </h3>
+<ul>
+  <li>  <a href="https://www.linkedin.com/in/shreya-chaudhary-/">Shreya Chaudhary</a> </li>
+  <li>  <a href="https://linkedin.com/in/siddhant-mukherjee-28b00b224/">Siddhant Mukherjee</a> </li>
+  <li>  <a href="https://www.mit.edu/~seshan/">Sanjay Seshan</a> </li>
+  <li>  <a href="https://www.linkedin.com/in/anna8murphy/">Anna Murphy</a> </li>
+  <li>  <a href="https://www.linkedin.com/in/siyong-huang-59a264221/">Siyong Huang</a> </li>
+  <li>  <a href="https://superurop.mit.edu/scholars/lasya-akila-balachandran/">Lasya A. Balachandran</a> </li>
+  <li>  <a href="https://www.linkedin.com/in/philena-liu/">Philena J. Liu</a> </li>
+  <li>  <a href="https://www.linkedin.com/in/soo-hyung-kim/">Sally Kim</a> </li>
+  <li>  <a href="https://www.linkedin.com/in/jinyuli03/">Jinyu (Dora) Li</a> </li>
+  <li>  <a href="https://www.linkedin.com/in/ruinan-lin-b727082b7/">Ruinan Lin</a> </li>
+</ul>
 -->
+</div>
 
-</div>
-</div>
-</div>
-</section>
-
-<!-- Publications Section -->
-<section id="publications">
-<div class="container lead">
-<div style="text-align: left; margin-top:10px" class="col-md-12">
-<i class="noshow" style="display:none;" id="tab-3">
-<button class="btn btn-default btn-lg btn-block"
-        style="display: block; width: 100%;"
-        onclick="javascript:$('#tab-pub-content').toggle();">
-    Publications<span class="glyphicon glyphicon-chevron-right"></span>
-</button>
-</i>
-<div class="allshow" style="display:none;" id="tab-pub-content">
-<hr class="star-primary">
+<div id="publications">
 
 <h2>Selected Publications </h2>
-<!--
-<h3><a href="https://scholar.google.com/citations?user=GcdGTBAAAAAJ&hl=en">(Google Scholar)</a>
-<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Xuhao">(DBLP)</a></h3>
--->
+
 <h3>(<a href="publications.html">Full Publication List</a>)</h3>
 
-<p><b><span style="color: forestgreen">(Arxiv)</span></b>
-  [<a href="https://arxiv.org/pdf/2405.03488">PDF</a>]
-  <br />
-  Anna Arpaci-Dusseau, Zixiang Zhou and <b>Xuhao Chen</b>
-  <br />
-  <a href="https://arxiv.org/abs/2405.03488">
-  <i>Accurate and Fast Approximate Graph Pattern Mining at Scale</i></a>, <br />
-  arXiv:2405.03488, 2024<br /></p>
-  <h3></h3>
+<p><b><span style="color: forestgreen">VLDB 2025</span></b>
+[<a href="https://arxiv.org/pdf/2405.03488">PDF</a>]
+<br />
+Anna Arpaci-Dusseau, Zixiang Zhou and <b>Xuhao Chen</b>
+<br />
+<a href="https://arxiv.org/abs/2405.03488">
+<i>Accurate and Fast Approximate Graph Pattern Mining at Scale</i></a>, <br />
+PVLDB, 2025<br /></p>
+<h3></h3>
 
 <p><b><span style="color: forestgreen">(EduPar 2024)</span></b>
 [<a href="docs/EduPar_SpeedCode.cameraready.pdf">PDF</a>]
@@ -325,18 +137,6 @@ Tim Kaler, <b>Xuhao Chen</b>, Brian Wheatman, Dorothy Curtis, Bruce Hoppe, Tao B
 <a href="https://arxiv.org/pdf/2112.09761.pdf">
 <i>Efficient and Scalable Graph Pattern Mining on GPUs</i></a>, <br />
 16th USENIX Symposium on Operating Systems Design and Implementation, 2022<br /></p>
-<h3></h3>
-
-<p><b><span style="color: forestgreen">(GNNSys 2021)</span></b>
-[<a href="docs/gnnsys-2021.pdf">PDF</a>]
-[<a href="docs/gnnsys-2021-poster.pptx">Poster</a>]
-[<a href="docs/gnnsys-2021-bib.txt">BibTeX</a>]
-[<a href="https://www.dropbox.com/s/263c0otvtl3w9wc/MIT-CSAIL-FastCodeSeminar-XuhaoChen-4-28-2021.mp4?dl=0">Zoom Talk</a>]
-[<a href="https://github.com/chenxuhao/GraphAIBench">Code</a>] <br />
-Loc Hoang, <b>Xuhao Chen</b>, Hochan Lee, Roshan Dathathri, Gurbinder Gill, Keshav Pingali,<br />
-<a href="docs/gnnsys-2021.pdf">
-<i>Efficient Distribution for Deep Learning on Large Graphs</i></a>, <br />
-Workshop on Graph Neural Networks and Systems, 2021<br /></p>
 <h3></h3>
 
 <p><b><span style="color: forestgreen">(ISCA 2021)</span></b>
@@ -400,184 +200,27 @@ In the Proceedings of 47th International Symposium on Micro Architecture (MICRO)
 (Acceptance rate: 53/273 ≈ 19.4%) <br /></p>
 <h3></h3>
 
-
 </div>
-</div>
-</div>
-</section>
-
-<section id="students">
-<div class="container lead">
-<div style="text-align: left; margin-top:10px" class="col-md-12">
-<i class="noshow" style="display:none;" id="tab-4">
-<button class="btn btn-default btn-lg btn-block"
-        style="display: block; width: 100%;"
-        onclick="javascript:$('#tab-students-content').toggle();">
-    Students  <span class="glyphicon glyphicon-chevron-right"></span>
-</button>
-</i>
-<div class="allshow" style="display:none;" id="tab-students-content">
-<hr class="star-primary">
-
-<h2>Students</h2>
 
 
-<h3>MEng </h3>
-
-<ul>
-  <li>  <a href="https://annaad.github.io/">Anna Arpaci-Dusseau</a> (MEng'24 &rarr; Lecturer at Boston University) </li>
-  <li>  <a href="https://www.linkedin.com/in/miranda-cai-5b3a70222/">Miranda Cai</a> (MEng'24 &rarr; Capital One) </li>
-  <li>  <a href="https://www.egmo.org/people/person1510/">Yuting (Emma) Qin</a> (MEng'24 &rarr; ) </li>
-  <li>  <a href="https://www.linkedin.com/in/muhua-xu-2b7038147/?locale=en_US">Muhua (Cici) Xu</a> (MEng'24 &rarr; Hudson River Trading) </li>
-</ul>
-
-<h3>UROP </h3>
-
-<ul>
-  <li>  <a href="https://annaad.github.io/">Anna Arpaci-Dusseau</a> </li>
-  <li>  <a href="https://www.egmo.org/people/person1510/">Yuting (Emma) Qin</a> </li>
-  <li>  <a href="https://www.linkedin.com/in/muhua-xu-2b7038147/?locale=en_US">Muhua (Cici) Xu</a> </li>
-  <li>  <a href="https://stats.ioinformatics.org/people/6469">Zixiang (Peter) Zhou</a> </li>
-  <li>  <a href="https://linkedin.com/in/chengyuan-ma-894314237/">Chengyuan Ma</a> </li>
-  <li>  <a href="https://www.linkedin.com/in/wenqi-ding-602aa5190/">Wenqi Ding</a> </li>
-  <li>  <a href="https://www.linkedin.com/in/shreya-chaudhary-/">Shreya Chaudhary</a> </li>
-  <li>  <a href="https://linkedin.com/in/siddhant-mukherjee-28b00b224/">Siddhant Mukherjee</a> </li>
-  <li>  <a href="https://www.linkedin.com/in/kellyho7/">Kelly Ho</a> </li>
-  <li>  <a href="https://www.mit.edu/~seshan/">Sanjay Seshan</a> </li>
-  <li>  <a href="https://www.linkedin.com/in/anna8murphy/">Anna Murphy</a> </li>
-  <li>  <a href="https://www.linkedin.com/in/siyong-huang-59a264221/">Siyong Huang</a> </li>
-  <li>  <a href="https://superurop.mit.edu/scholars/lasya-akila-balachandran/">Lasya A. Balachandran</a> </li>
-  <li>  <a href="https://www.linkedin.com/in/philena-liu/">Philena J. Liu</a> </li>
-  <li>  <a href="https://www.linkedin.com/in/lucgait/">Luc Gaitskell</a> </li>
-  <li>  <a href="https://www.linkedin.com/in/soo-hyung-kim/">Sally Kim</a> </li>
-  <li>  <a href="https://www.linkedin.com/in/jinyuli03/">Jinyu (Dora) Li</a> </li>
-  <li>  <a href="https://www.linkedin.com/in/ruinan-lin-b727082b7/">Ruinan Lin</a> </li>
-</ul>
-
-<!--
-<h2>Research Experience</h2>
-
-<h3>2020 - Present </h3>
-<p>
-<b>Hardware Accelerator for Graph Pattern Mining</b> <br />
-<i>With</i> Prof. <a href="http://csg.csail.mit.edu/Users/arvind/">Arvind</a> <br />
-Design and implemented FlexMiner, a pattern-aware accelerator for graph pattern mining (GPM).
-FlexMiner offers an order of magnitude speedup over state-of-the-art software GPM solutions.
-<br /> </p>
-
-<h3>2019 - 2020 </h3>
-<p>
-<b>Programming Framework for Graph Pattern Mining</b> <br />
-<i>With</i> Prof. <a href="http://www.cs.utexas.edu/~pingali/">Keshav Pingali</a> <br />
-Design and implemented two graph pattern mining (GPM) frameworks, Pangolin and Sandslash.
-Pangolin targets both CPU and GPU. It is the first GPM system that supports GPU mining,
-and it is orders-of-magnitude faster than previous GPM systems.
-Sandslash targets CPU only.
-It provides a novel two-level programming interface and supports adavanced GPM optimizations,
-which offers 8x speedup over Pangolin on CPU.
-<br /> </p>
-
-<h3>2015 - 2018 </h3>
-<p>
-<b>Parallel Graph Algorithms on GPU</b> <br />
-<i>With</i> Prof. <a href="https://dblp.org/pid/w/ZhiyingWang-3.html">Zhiying Wang</a> <br />
-Design and implemented various parallel graph algorithms, frameworks and benchmarks on the GPU,
-including vertex coloring, strongly connected components and sparse neural networks.
-<br /> </p>
-
-<h3>2011 - 2014 </h3>
-<p>
-<b>Cache Architecture for Irregular Algorithms on GPU</b> <br />
-<i>With</i> Prof. <a href="http://impact.crhc.illinois.edu/People/Hwu/hwu.aspx">Wen-Mei Hwu</a>
-and Prof. <a href="https://dblp.org/pid/w/ZhiyingWang-3.html">Zhiying Wang</a> <br />
-Designed and implemented efficient cache architectures for irregular applications on
-GPU.
-<br /> </p>
--->
-
-</div>
-</div>
-</div>
-</section>
-
-
-<section id="teach">
-<div class="container lead">
-<div style="text-align: left; margin-top:10px" class="col-md-12">
-<i class="noshow" style="display:none;" id="tab-5">
-<button class="btn btn-default btn-lg btn-block"
-        style="display: block; width: 100%;"
-        onclick="javascript:$('#tab-teach-content').toggle();">
-    Courses  <span class="glyphicon glyphicon-chevron-right"></span>
-</button>
-</i>
-<div class="allshow" style="display:none;" id="tab-teach-content">
-<hr class="star-primary">
-
+<div id="teaching">
 <h2>Teaching</h2>
 
-<!--
-<p>
-<b>Computer Architecture</b> (undergraduate course) <b>Fall 2008 NUDT</b> <br />
-<i>With Professor Zhiying Wang</i> <br />
-Teaching Assistant to mentor students on lab assignments and final projects
-<br />
-</p>
-
-<p>
-<b>Design and Analysis of Algorithms</b> (undergraduate course) <b>Fall 2010 NUDT</b> <br />
-<i>With Professor Jianping Yin</i> <br />
-Teaching Assistant to mentor students on labs and final projects and help with scoring
-<br />
-</p>
-
-<p>
-<b>CS 380C: Advanced Topics in Compilers</b> (graduate course) <b>Fall 2019, UT Austin</b> <br />
-<i>With Professor Keshav Pingali</i> <br />
-Teaching Assistant to setup course project and mentor students
-<br />
-</p>
-
-<p>
-<b>Parallel Computing</b> (course in development) <b>TBD</b> <br />
-<a href="parallel-computing">Parallel Computing</a> <br />
-Topic list: parallel architectures, matrix multiplication, tiling, convolution, stencil, histogram, atomic operations,
-reduction tree, prefix sum, merging, sorting, sparse matrix representations and processing, graph traversal,
-synchronization, and computational thinking.
-<br />
-</p>
-
-<p>
-<b>6.886: Algorithm Engineering</b> (graduate course) <b>Spring 2021, MIT</b> <br />
-<i>With Professor Julian Shun</i> <br />
-Guest lecture on Pangolin [<a href="https://people.csail.mit.edu/jshun/6886-s21/lectures/lecture15-2.pdf">Slides</a>]
-<br /> </p>
--->
-
-<ul>
-  <li>
-  <!--<b>Software Performance Engineering</b> <b> </b> <br />-->
-  <p><a href="sw-perf-engineering/">Software Performance Engineering</a> </p>
+<p><a href="sw-perf-engineering/">Software Performance Engineering</a> </p>
   <p>
   Topic list: Matrix Multiplication, Bit Hacks, Bentley’s Rules, Cache Tiling, Multicore Programming,
   Cilk, OpenMP, GPU, Synchronization, Vectorization, Cache-Oblivious Algorithms, Races and Parallelism,
   Compiler, Storage Allocation, Parallel Algorithms, Work and Span, Speculative Parallelism.
-  </p>
-  <br />
-</li>
+</p>
 
-<li>
-  <!--<b>GPU Programming</b> <b> </b> <br />-->
-  <p><a href="gpu-programming">GPU Programming</a> <br /></p>
+<p><a href="gpu-programming">Accelerated Computing</a> <br /></p>
   <p>
   Topic list: GPU architecture, CUDA programming model, SIMT, CUDA memory model, locality and tiling, scratchpad memory,
   memory coalescing, control divergence, atomic operations, streaming,
   warp synchronization, dynamic parallleism, multi-GPU programming.
   <!--matrix multiplication, convolution, stencil, histogram, reduction tree, prefix sum, merging, sorting, sparse matrix representations and processing, graph traversal,-->
-  </p>
-<br />
-</li>
-</ul>
+</p>
+
 <!--
 <p>
   <a href="computer-organization">Computer Organization</a> <br />
@@ -589,209 +232,22 @@ Guest lecture on Pangolin [<a href="https://people.csail.mit.edu/jshun/6886-s21/
   cache writing modes, cache performance, virtual memory, address translation, page tables, translation lookaside buffer.
   <br />
 </p>
--->
-
-</div>
-</div>
-</div>
-</section>
-
-
-<!-- Awards Section -->
-<!--
-<section id="awards">
-<div class="container lead">
-<div style="text-align: left; margin-top:10px" class="col-md-12">
-<i class="noshow" style="display:none;" id="tab-5">
-<button class="btn btn-default btn-lg btn-block"
-        style="display: block; width: 100%;"
-        onclick="javascript:$('#tab-awards-content').toggle();">
-    Awards  <span class="glyphicon glyphicon-chevron-right"></span>
-</button>
-</i>
-<div class="allshow" style="display:none;" id="tab-awards-content">
-<hr class="star-primary">
-
-<h2>Selected Honors and Awards</h2>
 
 <p>
-<a href="https://graphchallenge.mit.edu/champions">Graph Challenge</a> 2019 Student Innovation Awards 2019
-<br /> </p>
--->
-<!--
-<p>
-China Computer Federation (CCF) Distinguished PhD Dissertation Award Nominee 2015
-<br /> </p>
-
-<p>
-Ci Yun-Gui Computer Technology Scholarship for Graduate, NUDT (top 1%) 2010
-<br /> </p>
-
-<p>
-<b>Meritorious Winner</b>, Mathematical Contest In Modeling (MCM), <a href="https://www.comap.com/undergraduate/contests/">COMAP</a> 2009
-<br /> </p>
-
-<p>
-Distinguished Graduate, NUDT (top 1%), 2009
-<br /> </p>
-
-<p>
-First rank, Scholarship of Excellent Achievements, NUDT (top 3%) 2009
-<br /> </p>
-
-<p>
-Ci Yun-Gui Computer Technology Scholarship for Undergraduate, NUDT (top 1%) 2008
-<br /> </p>
-
-<p>
-First-rank Prize, China Undergraduate Mathematical Contest in Modeling 2007
-<br /> </p>
-
-<p>
-First rank, Scholarship of Excellent Achievements, NUDT (top 3%) 2007
-<br /> </p>
- -->
-<!--
-</div>
-</div>
-</div>
-</section>
--->
-
-<!-- Service Section -->
-<section id="service">
-<div class="container lead">
-<div style="text-align: left; margin-top:10px" class="col-md-12">
-<i class="noshow" style="display:none;" id="tab-6">
-<button class="btn btn-default btn-lg btn-block"
-        style="display: block; width: 100%;"
-        onclick="javascript:$('#tab-6-content').toggle();">
-        Service  <span class="glyphicon glyphicon-chevron-right"></span>
-</button>
-</i>
-<div class="allshow" style="display:none;" id="tab-6-content">
-<hr class="star-primary">
-
-<h2>Academic Service </h2>
-
-<ul>
-  <li> Invited reviewer for
-    <i>ACM Symposium on Parallelism in Algorithms and Architectures (SPAA)</i>
-  </li>
-
-  <li>Invited reviewer for
-    <i>The VLDB Journal</i>
-  </li>
-
-  <li>Invited reviewer for
-    <i>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)</i>
-  </li>
-
-  <li>Invited reviewer for
-    <i>IEEE Transactions on Knowledge and Data Engineering (TKDE)</i>
-  </li>
-
-  <li>Invited reviewer for
-    <i>ACM Transactions on Architecture and Code Optimization (TACO)</i>
-  </li>
-</ul>
-<!--
-<p>Invited reviewer for
-<i>ACM Transactions on Modeling and Performance Evaluation of Computing Systems</i>
-<br /> </p>
-
-<p>Invited reviewer for
-<i>Microprocessors and Microsystems: Embedded Hardware Design</i>
-<br /> </p>
-
-<p>Invited reviewer for
-<i>Journal of Supercomputing</i>
-<br /> </p>
--->
-</div>
-</div>
-</div>
-</section>
-
-<!-- Grants Section >
-<section id="grants">
-<div class="container lead">
-<div style="text-align: left; margin-top:10px" class="col-md-12">
-<i class="noshow" style="display:none;" id="tab-7">
-<button class="btn btn-default btn-lg btn-block"
-        style="display: block; width: 100%;"
-        onclick="javascript:$('#tab-grants-content').toggle();">
-    Projects  <span class="glyphicon glyphicon-chevron-right"></span>
-</button>
-</i>
-<div class="allshow" style="display:none;" id="tab-grants-content">
-<hr class="star-primary">
-
-<h2>Grant Writing Experience</h2>
-
-<p>
-1. NSF of China Grant No. 61502514 (2015), PI: Xuhao Chen <br />
-Project Title: Memory Hierarchy for Energy-efficient Heterogeneous Processors
-<br /> </p>
-
-<p>
-2. NSF of China Grant No. 61272144 (2012), PI: Zhiying Wang <br />
-Co-wrote successful grant proposal titled Energy-efficient Asynchronous Manycore Processor
-<br /> </p>
-
-</div>
-</div>
-</div>
-</section-->
-
-<!-- Contact Section -->
-<section id="contact">
-<div class="container lead">
-<div style="text-align: left; margin-top:10px" class="col-md-12">
-<i class="noshow" style="display:none;" id="tab-8">
-<button class="btn btn-default btn-lg btn-block"
-        style="display: block; width: 100%;"
-        onclick="javascript:$('#tab-contact-content').toggle();">
-Contact<span class="glyphicon glyphicon-chevron-right"></span>
-</button>
-</i>
-<div class="allshow" style="display:none;" id="tab-contact-content">
-<hr class="star-primary">
-
-<h2>Links</h2>
-<p>
-  <a href="https://www.youtube.com/watch?v=Unzc731iCUY">How to speak</a> <br />
-  <a href="https://www.youtube.com/watch?v=EoDrmqZ6hSE">The Zen of Research - Tips for New Researchers</a> <br />
-  <a href="https://scholar.google.com/citations?user=GcdGTBAAAAAJ&hl=en">Google Scholar Profile</a> <br />
-  <a href="https://www.linkedin.com/in/xuhao-chen-b7296a43">LinkedIn Profile</a> <br />
-  <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Xuhao">DBLP Entry</a> <br />
-  <a href="http://chenxuhao.github.io/">Homepage</a> <br />
-  <a href="https://people.csail.mit.edu/xchen/">MIT Homepage</a> <br />
-  <a href="https://github.com/chenxuhao/">Github Entry</a> <br />
-  <a href="https://orcid.org/0000-0001-6470-3387">ORCID iD</a> <br />
-  <a href="https://www.eecs.mit.edu/career-opportunities-at-eecs/faculty-job-talks-tips-from-the-faculty/">Faculty job talks: tips from the faculty</a> <br />
-  <a href="https://csguides.github.io/grad-job-guide/">Computer Science Graduate Job and Interview Guide</a> <br />
-  <a href="https://homes.cs.washington.edu/~mernst/advice/academic-job.html">Getting an academic job</a> <br />
-  <a href="https://cseweb.ucsd.edu/~swanson/GivingTalks.html">Preparing and Giving a Good Talk</a> <br />
-  <!--
-  <a href="https://pythonnumericalmethods.berkeley.edu/notebooks/chapter13.02-Multiprocessing.html">Python Programming and Numerical Methods - A Guide for Engineers and Scientists</a>
-  -->
+<b>Computer Architecture</b> (undergraduate course) <b>Fall 2008 NUDT</b> <br />
+<i>With Professor Zhiying Wang</i> <br />
+Teaching Assistant to mentor students on lab assignments and final projects
+<br />
 </p>
-
+-->
 </div>
-</div>
-<hr class="star-primary">
-</div>
-</section>
 
-<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=EddFCv4Xn5aP9UiuidpnqAqupxu-kMHdK2QYTjUbLPA&cl=ffffff&w=a"></script>
 
-  <hr class="star-primary">
-  <footer>
-    <small>
-    <center> © 2022 | Xuhao Chen
-    </center>
-    </small>
-  </footer>
-  </body>
+<div id="elsewhere" style="margin-top: 2em; text-align: center;">
+    <span class="twitter"><a href="https://twitter.com/chenxuhao" rel="me">@cxh</a></span> |
+    <span class="github"><img src="GitHub-Mark-64px.png" width="16px" height="16px" style="vertical-align: middle;" /> <a href="https://github.com/chenxuhao" rel="me">cxh</a></span>
+    |
+    <a href="http://accessibility.mit.edu/">Accessibility</a>
+</div>
+</body>
 </html>
