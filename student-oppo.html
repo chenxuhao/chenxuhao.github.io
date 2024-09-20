@@ -216,29 +216,28 @@ Below are some ongoing research projects.
 
     <p> <strong>References</strong> </p>
     <ol>
-    <li>
-      Zhuoran Ji, et. al., Accelerating Multi-Scalar Multiplication for Efficient Zero Knowledge Proofs with Multi-GPU Systems, ASPLOS 2024. https://dl.acm.org/doi/10.1145/3620666.3651364
-    </li>
-    <li>
-      Weiliang Ma, et. al., GZKP: A GPU Accelerated Zero-Knowledge Proof System. ASPLOS 2023. https://doi.org/10.1145/3575693.3575711
-    </li>
-  </ol>
+      <li> Accelerating Multi-Scalar Multiplication for Efficient Zero Knowledge Proofs with Multi-GPU Systems, ASPLOS 2024. https://dl.acm.org/doi/10.1145/3620666.3651364 </li>
+      <li> GZKP: A GPU Accelerated Zero-Knowledge Proof System. ASPLOS 2023. https://doi.org/10.1145/3575693.3575711 </li>
+      <li> MSMAC: Accelerating Multi-Scalar Multiplication for Zero-Knowledge Proof. DAC 2024 </li>
+      <li> PipeZK: Accelerating Zero-Knowledge Proof with a Pipelined Architecture. ISCA 2021 </li>
+      <li> Hardcaml MSM: A High-Performance Split CPU-FPGA Multi-Scalar Multiplication Engine. FPGA 2024 </li>
+    </ol>
 
     <h2> Deep Recommendation System [<a href="https://elx.mit.edu/experience/c67c0e7e-34ef-4de9-a95f-05e92e5c88d3">Elx Link</a>]</h2>
 
-      <p>
-        Deep Learning Recommendation Models (DLRMs) are widely used across industry to provide personalized recommendations to users and consumers.
-        Specifically, they are the backbone behind user engagement for industries such as ecommerce, entertainment, and social networks.
-        DLRMs have two stages: (1) training, in which the model learns to minimize the difference between predicted and actual user interactions,
-        and (2) inference, in which the model provides recommendations based on new data.
-        Traditionally, GPUs have been the hardware component of choice for DLRM training because of the high computational demand.
-        In contrast, CPUs have been widely used for DLRM inference due to tight latency requirements that restrict the batch size.
-        An existing bottleneck in inference is the high computational and memory bandwidth, which contribute greatly to loads on data centers and computing clusters.
-      </p>
+    <p>
+      Deep Learning Recommendation Models (DLRMs) are widely used across industry to provide personalized recommendations to users and consumers.
+      Specifically, they are the backbone behind user engagement for industries such as ecommerce, entertainment, and social networks.
+      DLRMs have two stages: (1) training, in which the model learns to minimize the difference between predicted and actual user interactions,
+      and (2) inference, in which the model provides recommendations based on new data.
+      Traditionally, GPUs have been the hardware component of choice for DLRM training because of the high computational demand.
+      In contrast, CPUs have been widely used for DLRM inference due to tight latency requirements that restrict the batch size.
+      An existing bottleneck in inference is the high computational and memory bandwidth, which contribute greatly to loads on data centers and computing clusters.
+    </p>
 
-      <p>
-        <img src="images/DRS.png" alt="Deep Recommendation System" style="width:370px;height:300px;">
-      </p>
+    <p>
+      <img src="images/DRS.png" alt="Deep Recommendation System" style="width:370px;height:300px;">
+    </p>
 
       <p>
         In this project, we will focus on exploring GPU optimizations to the embedding stage of the DLRM inference pipeline, which has traditionally only utilized CPUs.
